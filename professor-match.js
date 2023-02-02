@@ -4,7 +4,7 @@ document.getElementById("match-form").addEventListener("submit", function(event)
 });
 
 function display() {
-  document.write("<h1>GeeksForGeeks</h1>");
+  document.write("<h1>message</h1>");
   // Load the CSV file using PapaParse library
   Papa.parse("professors.csv", {
   header: true,
