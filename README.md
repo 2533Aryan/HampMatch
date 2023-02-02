@@ -1,3 +1,3 @@
 # HampMatch App
 
-- Find the best match professor!
+- Find the best match professor based!
