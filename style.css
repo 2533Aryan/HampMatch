@@ -1,10 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: #333;
+    color: white;
   }
   
   form {
-    background-color: lightgray;
+    background-color: #444;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px gray;
@@ -16,6 +18,8 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
     border: none;
+    background-color: #555;
+    color: white;
   }
   
   input[type="submit"] {
