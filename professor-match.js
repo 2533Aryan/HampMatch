@@ -1,17 +1,23 @@
-document.querySelector("input[type='submit']").addEventListener("click", function(event) {
-  event.preventDefault(); // prevent form submission
+//- Using an anonymous function:
+document.getElementById("clickMe").onclick = function () { 
+  alert('hello!');
+  console.log("The best match professor for interests is Professor X"); 
+};
 
-  // get the values of the three interests from the form
-  var interest1 = document.querySelector("input[name='interest1']").value;
-  var interest2 = document.querySelector("input[name='interest2']").value;
-  var interest3 = document.querySelector("input[name='interest3']").value;
+// document.querySelector("input[type='submit']").addEventListener("click", function(event) {
+//   event.preventDefault(); // prevent form submission
 
-  // your matching algorithm here
-  // ...
+//   // get the values of the three interests from the form
+//   var interest1 = document.querySelector("input[name='interest1']").value;
+//   var interest2 = document.querySelector("input[name='interest2']").value;
+//   var interest3 = document.querySelector("input[name='interest3']").value;
 
-  // example output
-  console.log("The best match professor for interests '" + interest1 + "', '" + interest2 + "', '" + interest3 + "' is Professor X");
-});
+//   // your matching algorithm here
+//   // ...
+
+//   // example output
+//   console.log("The best match professor for interests '" + interest1 + "', '" + interest2 + "', '" + interest3 + "' is Professor X");
+// });
 
 
 // document.querySelector("input[type='submit']").addEventListener("click", function(event) {
