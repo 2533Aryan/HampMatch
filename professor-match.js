@@ -10,8 +10,9 @@ document.querySelector("input[type='submit']").addEventListener("click", functio
   // ...
 
   // example output
-  alert("The best match professor for interests '" + interest1 + "', '" + interest2 + "', '" + interest3 + "' is Professor X");
+  console.log("The best match professor for interests '" + interest1 + "', '" + interest2 + "', '" + interest3 + "' is Professor X");
 });
+
 
 // document.querySelector("input[type='submit']").addEventListener("click", function(event) {
 //   event.preventDefault();
