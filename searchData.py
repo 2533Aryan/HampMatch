@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Make a request to the website
-url = "https://www.example.com/faculty-directory"
+url = "https://www.hampshire.edu/academics/faculty"
 response = requests.get(url)
 
 # Use BeautifulSoup to parse the HTML
