@@ -9,12 +9,12 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
 
 # Find the information you want to extract
-professors = soup.find_all("div", class_="faculty-member")
+professors = soup.find_all("div", class_="card__title")
 for professor in professors:
     name = professor.find("h3").text
-    # department = professor.find("span", class_="department").text
-    # expertise = professor.find("span", class_="expertise").text
-    # contact = professor.find("a", class_="email").text
+    department = professor.find("span", class_="department").text
+    expertise = professor.find("span", class_="expertise").text
+    contact = professor.find("a", class_="email").text
     
     # Store the extracted data
-    print(name)#, department, expertise, contact)
+    print(name, department, expertise, contact)
