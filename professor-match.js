@@ -3,6 +3,11 @@ document.getElementById("match-form").addEventListener("submit", function(event)
   display();
 });
 
+function display() {
+  document.write("<h1>GeeksForGeeks</h1>");
+}
+
+
 // document.querySelector("input[type='submit']").addEventListener("click", function(event) {
 //   event.preventDefault(); // prevent form submission
 
