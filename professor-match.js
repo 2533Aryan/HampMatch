@@ -1,8 +1,7 @@
-//- Using an anonymous function:
-document.getElementById("clickMe").onclick = function () { 
-  alert('hello!');
-  console.log("The best match professor for interests is Professor X"); 
-};
+document.getElementById("match-form").addEventListener("submit", function(event){
+  event.preventDefault();
+  display();
+});
 
 // document.querySelector("input[type='submit']").addEventListener("click", function(event) {
 //   event.preventDefault(); // prevent form submission
