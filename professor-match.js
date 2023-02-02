@@ -1,3 +1,7 @@
+document.querySelector("input[type='submit']").addEventListener("click", function(event) {
+  event.preventDefault();
+  // code to run your algorithm to match professor
+  
 // Load the CSV file using PapaParse library
 Papa.parse("professors.csv", {
   header: true,
@@ -44,4 +48,6 @@ Papa.parse("professors.csv", {
       }
     });
   }
+});
+
 });
