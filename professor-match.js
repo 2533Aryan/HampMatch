@@ -1,7 +1,16 @@
-document.getElementById("match-form").addEventListener("submit", function(event) {
-  event.preventDefault();
+document.querySelector("input[type='submit']").addEventListener("click", function(event) {
+  event.preventDefault(); // prevent form submission
 
-  // Your match algorithm code here
+  // get the values of the three interests from the form
+  var interest1 = document.querySelector("input[name='interest1']").value;
+  var interest2 = document.querySelector("input[name='interest2']").value;
+  var interest3 = document.querySelector("input[name='interest3']").value;
+
+  // your matching algorithm here
+  // ...
+
+  // example output
+  alert("The best match professor for interests '" + interest1 + "', '" + interest2 + "', '" + interest3 + "' is Professor X");
 });
 
 // document.querySelector("input[type='submit']").addEventListener("click", function(event) {
