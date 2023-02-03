@@ -1,4 +1,4 @@
-# HampMatch App
+# ProfMatch App
 
 
 - Find the best match professor based on study interests...
