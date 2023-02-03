@@ -1,3 +1,3 @@
 # HampMatch App
 
-- Find the best match professor based on study interests!
+- Find the best match professor based on study interests
