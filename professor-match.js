@@ -17,7 +17,6 @@ document.getElementById("match-form").addEventListener("submit", function(event)
 
 function display() {
   document.write("<h1>message</h1>");
-  document.
 }
 
 // load the data from the CSV file
