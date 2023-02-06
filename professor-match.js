@@ -25,6 +25,7 @@ function display() {
   let match = findMatch(interests);
   alert("Your best match is Professor " + match);
 }
+
 async function findMatch(interests) {
   let response = await fetch("professors.csv");
   let data = await response.text();
