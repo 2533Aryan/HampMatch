@@ -16,28 +16,28 @@ document.getElementById("match-form").addEventListener("submit", function(event)
 });
 
 
-// function display() {
-//   let interests = [];
-//   interests.push(document.querySelector("input[name='interest1']").value);
-//   interests.push(document.querySelector("input[name='interest2']").value);
-//   interests.push(document.querySelector("input[name='interest3']").value);
+function display() {
+  let interests = [];
+  interests.push(document.querySelector("input[name='interest1']").value);
+  interests.push(document.querySelector("input[name='interest2']").value);
+  interests.push(document.querySelector("input[name='interest3']").value);
   
-//   let match = findMatch(interests);
-//   alert("Your best match is Professor " + match);
-// }
-
-async function display() {
-  let form = document.getElementById("match-form");
-  let interests = [
-    form.elements.interest1.value,
-    form.elements.interest2.value,
-    form.elements.interest3.value
-  ];
-  let match = await findMatch(interests);
-  let output = document.createElement("p");
-  output.innerText = "Your best match is Professor " + match;
-  form.appendChild(output);
+  let match = findMatch(interests);
+  alert("Your best match is Professor " + match);
 }
+
+// async function display() {
+//   let form = document.getElementById("match-form");
+//   let interests = [
+//     form.elements.interest1.value,
+//     form.elements.interest2.value,
+//     form.elements.interest3.value
+//   ];
+//   let match = await findMatch(interests);
+//   let output = document.createElement("p");
+//   output.innerText = "Your best match is Professor " + match;
+//   form.appendChild(output);
+// }
 
 
 async function findMatch(interests) {
