@@ -1,8 +1,6 @@
-document.getElementById("match-form").addEventListener("submit", function(event){
-  event.preventDefault();
-  let name = "John"
-  alert("Your best match is Professor " + name);
-});
+// document.getElementById("match-form").addEventListener("submit", function(event){
+//   event.preventDefault();
+// });
 
 
 function display() {
