@@ -32,6 +32,7 @@ async function findMatch(interests) {
 
 
 function display() {
+  console.log(1);
   let interests = [];
   interests.push(document.querySelector("input[name='interest1']").value);
   interests.push(document.querySelector("input[name='interest2']").value);
