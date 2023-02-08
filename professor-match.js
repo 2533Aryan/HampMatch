@@ -1,5 +1,7 @@
 document.getElementById("match-form").addEventListener("submit", function(event){
   event.preventDefault();
+  let name = "John"
+  console.log(name);
   display();
 
   // Get the interests entered by the user
