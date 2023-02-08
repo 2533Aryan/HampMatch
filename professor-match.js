@@ -1,19 +1,3 @@
-// document.getElementById("match-form").addEventListener("submit", function(event){
-//   event.preventDefault();
-// });
-
-
-function display() {
-  let interests = [];
-  interests.push(document.querySelector("input[name='interest1']").value);
-  interests.push(document.querySelector("input[name='interest2']").value);
-  interests.push(document.querySelector("input[name='interest3']").value);
-  
-  let match = findMatch(interests);
-  alert("Your best match is Professor " + match);
-}
-
-
 async function findMatch(interests) {
   let response = await fetch("professors.csv");
   let data = await response.text();
@@ -45,3 +29,17 @@ async function findMatch(interests) {
   
   return matchName;
 }
+
+
+function display() {
+  let interests = [];
+  interests.push(document.querySelector("input[name='interest1']").value);
+  interests.push(document.querySelector("input[name='interest2']").value);
+  interests.push(document.querySelector("input[name='interest3']").value);
+  
+  let match = findMatch(interests);
+  alert("Your best match is Professor " + match);
+}
+
+
+display();
