@@ -1,19 +1,20 @@
 document.getElementById("match-form").addEventListener("submit", function(event){
   event.preventDefault();
   let name = "John"
-  console.log(name);
-  display();
+  alert("Your best match is Professor " + name);
+  
+  // display();
 
-  // Get the interests entered by the user
-  let interest1 = document.querySelector('input[name="interest1"]').value;
-  let interest2 = document.querySelector('input[name="interest2"]').value;
-  let interest3 = document.querySelector('input[name="interest3"]').value;
+  // // Get the interests entered by the user
+  // let interest1 = document.querySelector('input[name="interest1"]').value;
+  // let interest2 = document.querySelector('input[name="interest2"]').value;
+  // let interest3 = document.querySelector('input[name="interest3"]').value;
 
-  // Find the best match professor
-  let bestMatch = matchInterests(interest1, interest2, interest3);
+  // // Find the best match professor
+  // let bestMatch = matchInterests(interest1, interest2, interest3);
 
-  // Display the result to the user
-  alert("The best match professor is " + bestMatch.Name + " (" + bestMatch.Title + ") with an area of study in " + bestMatch.Area_of_Study + ".");
+  // // Display the result to the user
+  // alert("The best match professor is " + bestMatch.Name + " (" + bestMatch.Title + ") with an area of study in " + bestMatch.Area_of_Study + ".");
 
 });
 
