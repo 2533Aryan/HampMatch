@@ -47,3 +47,8 @@ function display() {
 
 
 display();
+
+document.querySelector("#submitButton").addEventListener("click", function() {
+  interests.push(document.querySelector("input[name='interest1']").value);
+  console.log(interests);
+});
