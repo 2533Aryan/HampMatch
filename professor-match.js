@@ -42,6 +42,7 @@ function display() {
   let match = findMatch(interests);
   alert("Your best match is Professor " + match);
   console.log(4);
+  
 }
 
 
