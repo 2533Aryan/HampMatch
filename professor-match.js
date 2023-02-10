@@ -35,7 +35,7 @@ function display() {
   console.log(1);
   let interests = [];
   console.log(2);
-  // error
+  // error happens here
   interests.push(document.querySelector("input[name='interest1']").value);
   interests.push(document.querySelector("input[name='interest2']").value);
   interests.push(document.querySelector("input[name='interest3']").value);
