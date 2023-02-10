@@ -35,6 +35,7 @@ function display() {
   console.log(1);
   let interests = [];
   console.log(2);
+  // error
   interests.push(document.querySelector("input[name='interest1']").value);
   interests.push(document.querySelector("input[name='interest2']").value);
   interests.push(document.querySelector("input[name='interest3']").value);
@@ -42,7 +43,7 @@ function display() {
   let match = findMatch(interests);
   alert("Your best match is Professor " + match);
   console.log(4);
-  
+
 }
 
 
