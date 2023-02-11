@@ -50,6 +50,7 @@ display();
 
 
 // new experiment
+// still something missing
 document.querySelector("#submitButton").addEventListener("click", function() {
   interests.push(document.querySelector("input[name='interest1']").value);
   console.log(interests);
