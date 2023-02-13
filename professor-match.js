@@ -49,7 +49,7 @@ function display() {
 display();
 
 
-// new experiment still something missing
+// new experiment - still something missing
 // probably learn about connectivity
 document.querySelector("#submitButton").addEventListener("click", function() {
   interests.push(document.querySelector("input[name='interest1']").value);
