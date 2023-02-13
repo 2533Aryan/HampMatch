@@ -50,7 +50,7 @@ display();
 
 
 // new experiment still something missing
-// probably have to learn about connectivity
+// probably have learn about connectivity
 document.querySelector("#submitButton").addEventListener("click", function() {
   interests.push(document.querySelector("input[name='interest1']").value);
   console.log(interests);
