@@ -17,8 +17,18 @@
   }
 
   #outer-box {
-    /* background-color: #009624;*/
-    padding: 20px;
+    background-color: #AF8FC7;
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+  }
+
+  #inter-box {
+    background-color: #C66CA8;
+    width: 350px;
+    height: 35px;
   }
 
   form {
