@@ -52,11 +52,13 @@
 
   
   input[type="text"], select {
+    font-family: 'Britannic Bold', sans-serif;
+    font-size: large;
     background-color: #C66CA8;
-    /* width: 350px;
-    height: 35px; */
+    width: 343px;
+    height: 30px;
     border: none;
-    color: #fff;
+    color: #69117F;
   }
 
   input[type="submit"] {
