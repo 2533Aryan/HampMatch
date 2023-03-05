@@ -39,17 +39,11 @@
   }
 
   #outer-text {
-    color: #2A0E8C;
-    font-size: large;
-  }
-
-  p {
     font-family: 'Britannic Bold', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: x-large;
+    color: #2A0E8C;
+    margin: auto;
   }
-
   
   input[type="text"], select {
     font-family: 'Britannic Bold', sans-serif;
