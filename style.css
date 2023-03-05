@@ -5,6 +5,11 @@
     color: #fff;
   }
 
+  h1 {
+    text-align: center;
+    color: #3C003E;
+  }
+
   #outer-box {
     background-color: #009624;
     padding: 20px;
