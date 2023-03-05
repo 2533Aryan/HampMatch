@@ -2,7 +2,7 @@
     font-family: 'Bernard MT Condensed';
     src: url('bernard-mt-condensed.ttf') format('truetype');
   }
-  
+
   body {
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -11,7 +11,7 @@
   }
 
   h1 {
-    font-family: conden;
+    font-family: 'Bernard MT Condensed', sans-serif;
     text-align: center;
     color: #3C003E;
   }
