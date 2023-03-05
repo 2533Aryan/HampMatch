@@ -7,18 +7,17 @@
   }
 
   body {
+    font-family: 'Bernard MT Condensed', sans-serif;
     padding: 20px;
     background-color: #D4CDE4;
   }
 
   h1 {
-    font-family: 'Bernard MT Condensed', sans-serif;
     text-align: center;
     color: #3C003E;
   }
 
   h2 {
-    font-family: 'Bernard MT Condensed', sans-serif;
     text-align: center;
     color: #2A0E8C;
   }
@@ -47,7 +46,7 @@
   p {
     font-family: 'Britannic Bold', sans-serif;
   }
-  
+
 /*   
   input[type="text"], select {
     background-color: #AF8FC7;
@@ -65,8 +64,7 @@
     justify-content: center;
     background-color: #FFB6BE;
     color: #F433CE;
-    border: #000000;
-    border-radius: 5px;
+    border: 1pt solid black;
     cursor: pointer;
   }
   
