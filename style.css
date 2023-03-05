@@ -45,13 +45,19 @@
 
   p {
     font-family: 'Britannic Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-/*   
+  
   input[type="text"], select {
-    background-color: #AF8FC7;
+    background-color: #C66CA8;
+    /* width: 350px;
+    height: 35px; */
+    border: none;
     color: #fff;
-  } */
+  }
 
   input[type="submit"] {
     width: 100px;
