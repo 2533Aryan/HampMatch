@@ -1,6 +1,9 @@
   @font-face {
     font-family: 'Bernard MT Condensed';
-    src: url('bernard-mt-condensed.ttf') format('truetype');
+    src: url('BERNHC.ttf') format('truetype');
+
+    font-family: 'Britannic Bold';
+    src: url('BRITANIC.ttf') format('truetype');
   }
 
   body {
@@ -41,6 +44,10 @@
     font-size: large;
   }
 
+  p {
+    font-family: 'Britannic Bold', sans-serif;
+  }
+  
 /*   
   input[type="text"], select {
     background-color: #AF8FC7;
