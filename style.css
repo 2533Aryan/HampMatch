@@ -16,6 +16,12 @@
     color: #3C003E;
   }
 
+  h2 {
+    font-family: 'Bernard MT Condensed', sans-serif;
+    text-align: center;
+    color: #2A0E8C;
+  }
+
   #outer-box {
     background-color: #AF8FC7;
     width: 500px;
