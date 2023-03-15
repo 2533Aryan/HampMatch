@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     background-color: #FFB6BE;
-    color: #F433CE;
+    color: #2e17a1;
     border: 1pt solid black;
     cursor: pointer;
   }
@@ -74,7 +74,6 @@
     background-color: #13aec0;
   }
 
-  button a {
+  a {
     text-decoration: none;
   }
-  
