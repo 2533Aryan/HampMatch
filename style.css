@@ -109,3 +109,8 @@
     height: 200px;
     margin-top: 50%;
   }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
