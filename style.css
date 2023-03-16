@@ -82,11 +82,14 @@
   .container {
     display: flex;
     justify-content:space-evenly;
+    margin-bottom: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   .outer-box2 {
     background-color: #AF8FC7;
-    width: 450px;
+    width: 350px;
     height: 400px;
     display: flex;
     flex-direction: column;
