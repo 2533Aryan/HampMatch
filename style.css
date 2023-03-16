@@ -92,14 +92,14 @@
     width: 350px;
     height: 400px;
     display: flex;
-    flex-direction: column;
-    /* align-items: end;
-    justify-content: right; */
+    /* flex-direction: column; */
+    justify-content: center;
   }
 
   
-  #inter-box {
+  .inner-box2 {
     background-color: #C66CA8;
-    width: 350px;
-    height: 35px;
+    width: 300px;
+    height: 50px;
+    margin-top: 4%;
   }
