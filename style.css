@@ -96,3 +96,10 @@
     /* align-items: end;
     justify-content: right; */
   }
+
+  
+  #inter-box {
+    background-color: #C66CA8;
+    width: 350px;
+    height: 35px;
+  }
