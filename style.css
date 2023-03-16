@@ -77,3 +77,15 @@
   a {
     text-decoration: none;
   }
+
+  
+  .outer-box2 {
+    background-color: #AF8FC7;
+    width: 450px;
+    height: 400px;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: end;
+    justify-content: right; */
+  }
