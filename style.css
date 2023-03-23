@@ -22,6 +22,10 @@
     color: #2A0E8C;
   }
 
+  #big {
+    font-size: xx-large;
+  }
+
   #outer-box {
     background-color: #AF8FC7;
     width: 450px;
