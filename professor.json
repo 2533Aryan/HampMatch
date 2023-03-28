@@ -1,0 +1,29 @@
+{
+    "professors": [
+      {
+        "first_name": "John",
+        "last_name": "Doe",
+        "area_of_study_1": "Computer Science",
+        "area_of_study_2": "Artificial Intelligence",
+        "area_of_study_3": "Machine Learning",
+        "email_id": "johndoe@university.edu"
+      },
+      {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "area_of_study_1": "Biology",
+        "area_of_study_2": "Genetics",
+        "area_of_study_3": "Biochemistry",
+        "email_id": "janesmith@university.edu"
+      },
+      {
+        "first_name": "Bob",
+        "last_name": "Johnson",
+        "area_of_study_1": "Mathematics",
+        "area_of_study_2": "Statistics",
+        "area_of_study_3": "Data Analysis",
+        "email_id": "bobjohnson@university.edu"
+      }
+    ]
+  }
+  
