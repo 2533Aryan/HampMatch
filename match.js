@@ -6,7 +6,7 @@
 
 // addEventListener('click', pageTwo)
 
-const url = "professors.json";
+const url = "professor.json";
 
 fetch(url)
   .then(response => response.json())
