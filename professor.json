@@ -23,6 +23,22 @@
         "area_of_study_2": "Statistics",
         "area_of_study_3": "Data Analysis",
         "email_id": "bobjohnson@university.edu"
+      },
+      {
+        "first_name": "Karen",
+        "last_name": "Williams",
+        "area_of_study_1": "Chemistry",
+        "area_of_study_2": "Organic Chemistry",
+        "area_of_study_3": "Biochemistry",
+        "email_id": "karenwilliams@university.edu"
+      },
+      {
+        "first_name": "David",
+        "last_name": "Lee",
+        "area_of_study_1": "Physics",
+        "area_of_study_2": "Quantum Mechanics",
+        "area_of_study_3": "Astrophysics",
+        "email_id": "davidlee@university.edu"
       }
     ]
   }
