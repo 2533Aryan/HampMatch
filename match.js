@@ -51,13 +51,13 @@ fetch(url)
             // const imageElement = document.querySelectorAll(".inner-box2 img")[index];
             // imageElement.src = professorImageUrl;
 
-            // // Set the professor name
+            // Set the professor name
             // const nameElement = document.querySelectorAll(".inner-box2 h3")[index];
             // nameElement.textContent = professorName;
 
-            // // Set the professor email
-            // const emailElement = document.querySelectorAll(".inner-box2 p")[index];
-            // emailElement.textContent = "Email: " + professorEmail;
+            // Set the professor email
+            const emailElement = document.querySelectorAll(".inner-box2 p")[index];
+            emailElement.textContent = "Email: " + professorEmail;
 
             // // Set the professor areas of study
             // const areasOfStudyElement = document.querySelectorAll(".inner-box2 ul")[index];
