@@ -18,8 +18,8 @@ fetch(url)
             ];
 
             // Set the professor image
-            // const imageElement = document.querySelectorAll(".inner-box2 img")[index];
-            // imageElement.src = professorImageUrl;
+            const imageElement = document.querySelectorAll("img")[index];
+            imageElement.src = professorImageUrl;
 
             // Set the professor name
             const nameElement = document.querySelectorAll(".prof-name")[index];
