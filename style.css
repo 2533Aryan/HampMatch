@@ -121,11 +121,6 @@
     margin-top: 50%;
   }
 
-  /* img {
-    width: 100px;
-    height: 165px;
-  } */
-
 
 
   /* Professor details */
@@ -133,6 +128,11 @@
     font-family: 'Britannic Bold', sans-serif;
     font-size: xx-large;
     color: #69117F;
+  }
+
+  img{
+    width: 150px;
+    height: 150px;
   }
 
   .img-content{
@@ -153,7 +153,6 @@
   .prof-area{
     font-family: 'Britannic Bold', sans-serif;
     font-size: large;
-    /* color: #69117F; */
     width: 300px;
     height: 100px;
   }
