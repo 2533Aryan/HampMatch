@@ -63,9 +63,11 @@ fetch(url)
                 areasOfStudyElement.appendChild(liElement);
             });
 
-            // // Set the professor email
+            // Set the professor email
             // const emailElement = document.querySelectorAll(".prof-email")[index];
-            // emailElement.textContent = professorEmail;
+            // const liElement = document.createElement("p");
+            // liElement.textContent = professorEmail;
+            // emailElement.appendChild(liElement);
         });
     })
     .catch(error => console.error(error));

@@ -158,12 +158,18 @@
 
   .email-heading{
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     font-size: x-large;
     color: #69117F;
   }
 
-  .prof-email{
+  .email-content{
+    margin: 0%;
+    font-size: large;
+    color: #000000;
+  }
+
+  .prof-email {
     font-family: 'Britannic Bold', sans-serif;
     font-size: x-large;
     color: #69117F;
@@ -171,3 +177,4 @@
     width: 300px;
     height: 40px;
   }
+  
