@@ -27,24 +27,26 @@
 //     professorsList.innerHTML = professorsHtml;
 //   })
 //   .catch(error => console.error(error));
+
 const url = "professor.json";
 
 fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    // Select three random professors
-    const selectedProfessors = selectRandomProfessors(data.professors, 3);
+    .then(response => response.json())
+    .then(data => {
+        // Select three random professors
+        const selectedProfessors = selectRandomProfessors(data.professors, 3);
 
-    // Display the selected professors
-    selectedProfessors.forEach((professor, index) => {
-      const professorName = professor.first_name + " " + professor.last_name;
-      const professorImageUrl = professor.image_url;
-      const professorEmail = professor.email_id;
-      const professorAreasOfStudy = [
-        professor.area_of_study_1,
-        professor.area_of_study_2,
-        professor.area_of_study_3
-      ];
+        // Display the selected professors
+        selectedProfessors.forEach((professor, index) => {
+            
+            const professorName = professor.first_name + " " + professor.last_name;
+            const professorImageUrl = professor.image_url;
+            const professorEmail = professor.email_id;
+            const professorAreasOfStudy = [
+            professor.area_of_study_1,
+            professor.area_of_study_2,
+            professor.area_of_study_3
+            ];
 
       // Set the professor image
       const imageElement = document.querySelectorAll(".inner-box2 img")[index];
@@ -66,7 +68,7 @@ fetch(url)
         areasOfStudyElement.appendChild(liElement);
       });
     });
-  })
+    })
   .catch(error => console.error(error));
 
 function selectRandomProfessors(professors, num) {
