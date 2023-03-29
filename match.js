@@ -56,7 +56,9 @@ fetch(url)
             // nameElement.textContent = professorName;
 
             // Set the professor email
-            const emailElement = document.querySelectorAll(".inner-box2 p")[index];
+            // const emailElement = document.querySelectorAll(".inner-box2 p")[index];
+            // emailElement.textContent = "Email: " + professorEmail;
+            const emailElement = document.querySelectorAll(".prof-email")[index];
             emailElement.textContent = "Email: " + professorEmail;
 
             // // Set the professor areas of study
