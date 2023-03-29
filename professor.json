@@ -6,7 +6,8 @@
         "area_of_study_1": "Computer Science",
         "area_of_study_2": "Artificial Intelligence",
         "area_of_study_3": "Machine Learning",
-        "email_id": "johndoe@university.edu"
+        "email_id": "johndoe@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/john-castorino.jpg.webp?itok=G_y9x1oI"
       },
       {
         "first_name": "Jane",
@@ -14,7 +15,8 @@
         "area_of_study_1": "Biology",
         "area_of_study_2": "Genetics",
         "area_of_study_3": "Biochemistry",
-        "email_id": "janesmith@university.edu"
+        "email_id": "janesmith@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2022-03/Christoph__640-x-640.jpg.webp?h=93fa4828&itok=NwMjJEKm"
       },
       {
         "first_name": "Bob",
@@ -22,7 +24,8 @@
         "area_of_study_1": "Mathematics",
         "area_of_study_2": "Statistics",
         "area_of_study_3": "Data Analysis",
-        "email_id": "bobjohnson@university.edu"
+        "email_id": "bobjohnson@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2022-04/Jaime-Davila_Square.jpg.webp?h=b6737b5b&itok=KolaSu9C"
       },
       {
         "first_name": "Karen",
@@ -30,7 +33,8 @@
         "area_of_study_1": "Chemistry",
         "area_of_study_2": "Organic Chemistry",
         "area_of_study_3": "Biochemistry",
-        "email_id": "karenwilliams@university.edu"
+        "email_id": "karenwilliams@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/Grid_a.goodman.jpg.webp?itok=wjvoqRCh"
       },
       {
         "first_name": "David",
@@ -38,8 +42,9 @@
         "area_of_study_1": "Physics",
         "area_of_study_2": "Quantum Mechanics",
         "area_of_study_3": "Astrophysics",
-        "email_id": "davidlee@university.edu"
+        "email_id": "davidlee@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty_thumbnails/Ethan_Meyers_grid.jpg.webp?itok=vY8S9Pv-"
       }
     ]
-  }
+}
   
