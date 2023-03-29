@@ -64,10 +64,8 @@ fetch(url)
             });
 
             // Set the professor email
-            // const emailElement = document.querySelectorAll(".prof-email")[index];
-            // const liElement = document.createElement("p");
-            // liElement.textContent = professorEmail;
-            // emailElement.appendChild(liElement);
+            const emailElement = document.querySelectorAll(".email-content")[index];
+            emailElement.textContent = professorEmail;
         });
     })
     .catch(error => console.error(error));
