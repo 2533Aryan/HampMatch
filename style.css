@@ -110,6 +110,7 @@
     margin-top: 4%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   #content {
@@ -127,8 +128,8 @@
 
 
   /* Professor details */
-  .e{
-    background-color: #13aec0;
-    width: 100px;
-    height: 100px;
+  .prof-name{
+    font-family: 'Britannic Bold', sans-serif;
+    font-size: xx-large;
+    color: #69117F;
   }
