@@ -41,10 +41,10 @@ fetch(url)
     .catch(error => console.error(error));
 
 function selectRandomProfessors(professors, num) {
-  const selectedProfessors = [];
-  const shuffledProfessors = professors.sort(() => 0.5 - Math.random());
-  for (let i = 0; i < num; i++) {
-    selectedProfessors.push(shuffledProfessors[i]);
-  }
-  return selectedProfessors;
+    const selectedProfessors = [];
+    const shuffledProfessors = professors.sort(() => 0.5 - Math.random());
+    for (let i = 0; i < num; i++) {
+        selectedProfessors.push(shuffledProfessors[i]);
+    }
+    return selectedProfessors;
 }
