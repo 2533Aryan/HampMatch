@@ -38,38 +38,37 @@ fetch(url)
 
         // Display the selected professors
         selectedProfessors.forEach((professor, index) => {
-            
             const professorName = professor.first_name + " " + professor.last_name;
             const professorImageUrl = professor.image_url;
             const professorEmail = professor.email_id;
             const professorAreasOfStudy = [
-            professor.area_of_study_1,
-            professor.area_of_study_2,
-            professor.area_of_study_3
+                professor.area_of_study_1,
+                professor.area_of_study_2,
+                professor.area_of_study_3
             ];
 
-      // Set the professor image
-      const imageElement = document.querySelectorAll(".inner-box2 img")[index];
-      imageElement.src = professorImageUrl;
+            // Set the professor image
+            // const imageElement = document.querySelectorAll(".inner-box2 img")[index];
+            // imageElement.src = professorImageUrl;
 
-      // Set the professor name
-      const nameElement = document.querySelectorAll(".inner-box2 h3")[index];
-      nameElement.textContent = professorName;
+            // Set the professor name
+            const nameElement = document.querySelectorAll(".inner-box2 h3")[index];
+            nameElement.textContent = professorName;
 
-      // Set the professor email
-      const emailElement = document.querySelectorAll(".inner-box2 p")[index];
-      emailElement.textContent = "Email: " + professorEmail;
+            // Set the professor email
+            const emailElement = document.querySelectorAll(".inner-box2 p")[index];
+            emailElement.textContent = "Email: " + professorEmail;
 
-      // Set the professor areas of study
-      const areasOfStudyElement = document.querySelectorAll(".inner-box2 ul")[index];
-      professorAreasOfStudy.forEach(areaOfStudy => {
-        const liElement = document.createElement("li");
-        liElement.textContent = areaOfStudy;
-        areasOfStudyElement.appendChild(liElement);
-      });
-    });
+            // Set the professor areas of study
+            const areasOfStudyElement = document.querySelectorAll(".inner-box2 ul")[index];
+            professorAreasOfStudy.forEach(areaOfStudy => {
+                const liElement = document.createElement("li");
+                liElement.textContent = areaOfStudy;
+                areasOfStudyElement.appendChild(liElement);
+            });
+        });
     })
-  .catch(error => console.error(error));
+    .catch(error => console.error(error));
 
 function selectRandomProfessors(professors, num) {
   const selectedProfessors = [];
