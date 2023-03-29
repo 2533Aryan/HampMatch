@@ -6,12 +6,8 @@
     src: url('BRITANIC.ttf') format('truetype');
   }
 
-  .e{
-    background-color: #13aec0;
-    width: 100px;
-    height: 100px;
-  }
 
+  /* Style for first page */
   body {
     font-family: 'Bernard MT Condensed', sans-serif;
     padding: 20px;
@@ -88,7 +84,9 @@
     text-decoration: none;
   }
 
+
   
+  /* Style for second page */
   .container {
     display: flex;
     justify-content:space-evenly;
@@ -124,4 +122,13 @@
   img {
     width: 100px;
     height: 165px;
+  }
+
+
+
+  /* Professor details */
+  .e{
+    background-color: #13aec0;
+    width: 100px;
+    height: 100px;
   }

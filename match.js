@@ -52,12 +52,10 @@ fetch(url)
             // imageElement.src = professorImageUrl;
 
             // Set the professor name
-            // const nameElement = document.querySelectorAll(".inner-box2 h3")[index];
-            // nameElement.textContent = professorName;
+            const nameElement = document.querySelectorAll(".prof-name")[index];
+            nameElement.textContent = professorName;
 
             // Set the professor email
-            // const emailElement = document.querySelectorAll(".inner-box2 p")[index];
-            // emailElement.textContent = "Email: " + professorEmail;
             // const emailElement = document.querySelectorAll(".prof-email")[index];
             // emailElement.textContent = "Email: " + professorEmail;
 
