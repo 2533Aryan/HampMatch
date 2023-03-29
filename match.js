@@ -56,13 +56,13 @@ fetch(url)
             nameElement.textContent = professorName;
 
             // // Set the professor areas of study
-            // const areasOfStudyElement = document.querySelectorAll(".inner-box2 ul")[index];
-            // professorAreasOfStudy.forEach(areaOfStudy => {
-            //     const liElement = document.createElement("li");
-            //     liElement.textContent = areaOfStudy;
-            //     areasOfStudyElement.appendChild(liElement);
-            // });
-            
+            const areasOfStudyElement = document.querySelectorAll(".prof-area")[index];
+            professorAreasOfStudy.forEach(areaOfStudy => {
+                const liElement = document.createElement("li");
+                liElement.textContent = areaOfStudy;
+                areasOfStudyElement.appendChild(liElement);
+            });
+
             // Set the professor email
             const emailElement = document.querySelectorAll(".prof-email")[index];
             emailElement.textContent = "Email: " + professorEmail;
