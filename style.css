@@ -121,10 +121,10 @@
     margin-top: 50%;
   }
 
-  img {
+  /* img {
     width: 100px;
     height: 165px;
-  }
+  } */
 
 
 
@@ -137,12 +137,14 @@
 
   .img{
     background-color: #13aec0;
+    margin-top: 3%;
+    margin-bottom: 0%;
     width: 150px;
     height: 150px;
   }
 
   .area-heading{
-    margin-top: 7%;
+    margin-top: 4%;
     margin-bottom: 2%;
     font-size: x-large;
     color: #69117F;
@@ -157,7 +159,7 @@
   }
 
   .email-heading{
-    margin-top: 1%;
+    margin-top: 0%;
     margin-bottom: 0%;
     font-size: x-large;
     color: #69117F;
@@ -177,4 +179,3 @@
     width: 300px;
     height: 40px;
   }
-  
