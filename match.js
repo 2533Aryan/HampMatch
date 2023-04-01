@@ -1,3 +1,5 @@
+const fs = require('fs'); // require the Node.js file system module
+
 // select the input fields by their name attribute
 const nameInput = document.querySelector('input[name="Name"]');
 const emailInput = document.querySelector('input[name="Email"]');
@@ -19,9 +21,17 @@ submitButton.addEventListener('click', function(event) {
     areas: [area1Input.value, area2Input.value, area3Input.value]
   };
   
-  // log the JSON object to the console
-  console.log(data);
+  // write the JSON object to the students.json file
+  const json = JSON.stringify(data); // convert the object to a JSON string
+  fs.writeFile('students.json', json, 'utf8', function(err) {
+    if (err) {
+      console.log('Error writing file:', err);
+    } else {
+      console.log('Student data saved to students.json');
+    }
+  });
 });
+
 
 // const url = "professor.json";
 
