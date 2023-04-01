@@ -60,7 +60,7 @@ function getStudentData(){
     const area1Input = document.querySelector('input[name="Area1"]');
     const area2Input = document.querySelector('input[name="Area2"]');
     const area3Input = document.querySelector('input[name="Area3"]');
-    
+    console.log(1);
 }
 
 // const fs = require('fs'); // require the Node.js file system module
