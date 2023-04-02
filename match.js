@@ -51,8 +51,11 @@
 // }
 
 
+import { writeFile } from 'fs'; // require the Node.js file system module
 
 function getStudentData(){
+    
+    
     // select the input fields by their name attribute
     const nameInput = document.querySelector('input[name="Name"]');
     const emailInput = document.querySelector('input[name="Email"]');
@@ -60,10 +63,57 @@ function getStudentData(){
     const area1Input = document.querySelector('input[name="Area1"]');
     const area2Input = document.querySelector('input[name="Area2"]');
     const area3Input = document.querySelector('input[name="Area3"]');
-    console.log(1);
+
+    // create a JSON object with the data from the input fields
+    const data = {
+        name: nameInput.value,
+        email: emailInput.value,
+        year: yearInput.value,
+        areas: [area1Input.value, area2Input.value, area3Input.value]
+    };
+
+    const message = "Hi";
+    storeData(message);
+
+
+    // write the JSON object to the students.json file
+    // const student = JSON.stringify(data); // convert the object to a JSON string
+
+    // writeFile('students.json', student, 'utf8', function(err) {
+    //     if (err) {
+    //         console.log('Error writing file:', err);
+    //     } else {
+    //         console.log('Student data saved to students.json');
+    //     }
+    // });
+    
+    
+    // // add an event listener to the submit button if it exists
+    // const submitButton = document.querySelector('button');
+    // if (submitButton) {
+    //     submitButton.addEventListener('click', function(event) {
+
+    //         event.preventDefault(); // prevent the default form submission
+
+    //     });
+    // } else {console.log('Error: Submit button not found.');
+    // }
+
 }
 
-// const fs = require('fs'); // require the Node.js file system module
+
+function storeData(data){
+    data = "H";
+    
+    writeFile('example.txt', data, 'utf8', function(err) {
+        if (err) {
+            console.log('Error writing file:', err);
+        } else {
+            console.log('Student data saved to students.json');
+        }
+    });
+
+}
 
 // // select the input fields by their name attribute
 // const nameInput = document.querySelector('input[name="Name"]');
