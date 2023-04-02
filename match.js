@@ -51,41 +51,38 @@
 // }
 
 
-import { writeFile } from 'fs'; // require the Node.js file system module
+// import { writeFile } from 'fs'; // require the Node.js file system module
 
-function getStudentData(){
+// function getStudentData(){
     
     
-    // select the input fields by their name attribute
-    const nameInput = document.querySelector('input[name="Name"]');
-    const emailInput = document.querySelector('input[name="Email"]');
-    const yearInput = document.querySelector('input[name="Year"]');
-    const area1Input = document.querySelector('input[name="Area1"]');
-    const area2Input = document.querySelector('input[name="Area2"]');
-    const area3Input = document.querySelector('input[name="Area3"]');
+//     // select the input fields by their name attribute
+//     const nameInput = document.querySelector('input[name="Name"]');
+//     const emailInput = document.querySelector('input[name="Email"]');
+//     const yearInput = document.querySelector('input[name="Year"]');
+//     const area1Input = document.querySelector('input[name="Area1"]');
+//     const area2Input = document.querySelector('input[name="Area2"]');
+//     const area3Input = document.querySelector('input[name="Area3"]');
 
-    // create a JSON object with the data from the input fields
-    const data = {
-        name: nameInput.value,
-        email: emailInput.value,
-        year: yearInput.value,
-        areas: [area1Input.value, area2Input.value, area3Input.value]
-    };
-
-    const message = "Hi";
-    storeData(message);
+//     // create a JSON object with the data from the input fields
+//     const data = {
+//         name: nameInput.value,
+//         email: emailInput.value,
+//         year: yearInput.value,
+//         areas: [area1Input.value, area2Input.value, area3Input.value]
+//     };
 
 
-    // write the JSON object to the students.json file
-    // const student = JSON.stringify(data); // convert the object to a JSON string
+//     // write the JSON object to the students.json file
+//     const student = JSON.stringify(data); // convert the object to a JSON string
 
-    // writeFile('students.json', student, 'utf8', function(err) {
-    //     if (err) {
-    //         console.log('Error writing file:', err);
-    //     } else {
-    //         console.log('Student data saved to students.json');
-    //     }
-    // });
+//     writeFile('students.json', student, 'utf8', function(err) {
+//         if (err) {
+//             console.log('Error writing file:', err);
+//         } else {
+//             console.log('Student data saved to students.json');
+//         }
+//     });
     
     
     // // add an event listener to the submit button if it exists
@@ -99,21 +96,21 @@ function getStudentData(){
     // } else {console.log('Error: Submit button not found.');
     // }
 
-}
+// }
 
 
-function storeData(data){
-    data = "H";
+// function storeData(data){
+//     data = "H";
     
-    writeFile('example.txt', data, 'utf8', function(err) {
-        if (err) {
-            console.log('Error writing file:', err);
-        } else {
-            console.log('Student data saved to students.json');
-        }
-    });
+//     writeFile('example.txt', data, 'utf8', function(err) {
+//         if (err) {
+//             console.log('Error writing file:', err);
+//         } else {
+//             console.log('Student data saved to students.json');
+//         }
+//     });
 
-}
+// }
 
 // // select the input fields by their name attribute
 // const nameInput = document.querySelector('input[name="Name"]');
@@ -154,3 +151,40 @@ function storeData(data){
 //   console.log('Error: Submit button not found.');
 // }
 
+function getStudentData(){
+
+    // Get the HTML form input elements
+    const nameInput = document.querySelector('input[name="Name"]');
+    const emailInput = document.querySelector('input[name="Email"]');
+    const yearInput = document.querySelector('input[name="Year"]');
+    const area1Input = document.querySelector('input[name="Area1"]');
+    const area2Input = document.querySelector('input[name="Area2"]');
+    const area3Input = document.querySelector('input[name="Area3"]');
+
+    // Create a JSON object with the form data
+    const data = {
+        name: nameInput.value,
+        email: emailInput.value,
+        year: yearInput.value,
+        areas: [area1Input.value, area2Input.value, area3Input.value]
+    };
+
+    // Send the JSON object to the server using a POST request
+    fetch('/submit-form', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('Form data submitted successfully');
+        } else {
+            throw new Error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        console.error(error);
+    });
+}
