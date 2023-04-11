@@ -4,10 +4,14 @@
         "first_name": "John",
         "last_name": "Castorino",
         "area_of_study_1": "Computer Science",
+        "area_of_study_1_alternative": ["Computer Science", "CS", "Computer"],
         "area_of_study_2": "Artificial Intelligence",
+        "area_of_study_2_alternative": ["AI", "Computer Learning"],
         "area_of_study_3": "Machine Learning",
+        "area_of_study_3_alternative": ["ML", "Deep Learning"],
         "email_id": "johndoe@university.edu",
-        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/john-castorino.jpg.webp?itok=G_y9x1oI"
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/john-castorino.jpg.webp?itok=G_y9x1oI",
+        "read-more": "https://www.hampshire.edu/academics/faculty/john-castorino"
       },
       {
         "first_name": "Christoph",
@@ -16,7 +20,8 @@
         "area_of_study_2": "Genetics",
         "area_of_study_3": "Biochemistry",
         "email_id": "janesmith@university.edu",
-        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2022-03/Christoph__640-x-640.jpg.webp?h=93fa4828&itok=NwMjJEKm"
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2022-03/Christoph__640-x-640.jpg.webp?h=93fa4828&itok=NwMjJEKm",
+        "read-more": "https://www.hampshire.edu/academics/faculty/john-castorino"
       },
       {
         "first_name": "Jaime",
