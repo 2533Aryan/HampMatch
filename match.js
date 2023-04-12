@@ -1,72 +1,97 @@
 const matchButton = document.querySelector('#match-button');
-const keywordsInput = document.querySelector('input[name="Area1"]');
-const locationInput = document.querySelector('input[name="Area2"]');
+const area1Input = document.querySelector('input[name="Area1"]');
+const area2Input = document.querySelector('input[name="Area2"]');
 const area3Input = document.querySelector('input[name="Area3"]');
-const featuredJobsContainer = document.querySelector('.featured-jobs');
-//         area1Input : document.querySelector('input[name="Area1"]'),
-//         area2Input : document.querySelector('input[name="Area2"]'),
-//         area3Input : document.querySelector('input[name="Area3"]')
+
 
 const url = "professor.json";
 
-// fetch(url)
-//   .then(response => response.json())
-//   .then(jobs => {
-//     jobs.forEach(generateJobElement);
-//   });
 
 matchButton.addEventListener('click', event => {
     event.preventDefault();
 
-    const keywords = keywordsInput.value.trim().toLowerCase();
-    const location = locationInput.value.trim().toLowerCase();
+    const area1 = keywordsInput.value.trim().toLowerCase();
+    const area2 = locationInput.value.trim().toLowerCase();
+    const area3 = keywordsInput.value.trim().toLowerCase();
 
-    // Clear the featured jobs container
-    featuredJobsContainer.innerHTML = '';
 
-    fetch('jobs-data.json')
+    fetch(url)
     .then(response => response.json())
-    .then(jobs => {
+    .then(professors => {
         // Filter the jobs by keywords and location
-        const filteredJobs = jobs.filter(job => {
-        return (
-            job.title.toLowerCase().includes(keywords) &&
-            job.location.toLowerCase().includes(location)
-        );
+        const filteredProfessors = professors.filter(professor => {
+            return (
+                professor.area_of_study_1.toLowerCase().includes(area1) &&
+                professor.area_of_study_2.toLowerCase().includes(area2) &&
+                professor.area_of_study_3.toLowerCase().includes(area3) 
+            );
         });
 
         // Generate and append the elements for the filtered jobs
-        filteredJobs.forEach(generateJobElement);
-});
+        filteredProfessors.forEach(generateProfessorElement);
+    });
 });
 
-function generateJobElement(job) {
-    // Create the elements for the job
-    const jobElement = document.createElement('div');
-    const titleElement = document.createElement('h3');
-    const companyElement = document.createElement('p');
-    const locationElement = document.createElement('p');
-    const descriptionElement = document.createElement('p');
-    const applyButton = document.createElement('a');
+
+function generateProfessorElement(professor) {
+    // Display the selected professors
+    const professorName = professor.first_name + " " + professor.last_name;
+    const professorImageUrl = professor.image;
+    const professorEmail = professor.email_id;
+    const professorAreasOfStudy = [
+        professor.area_of_study_1,
+        professor.area_of_study_2,
+        professor.area_of_study_3
+    ];
+
+    // Set the professor image
+    const imageElement = document.querySelectorAll("img")[index];
+    imageElement.src = professorImageUrl;
+
+    // Set the professor name
+    const nameElement = document.querySelectorAll(".prof-name")[index];
+    nameElement.textContent = professorName;
+
+    // // Set the professor areas of study
+    const areasOfStudyElement = document.querySelectorAll(".prof-area")[index];
+    professorAreasOfStudy.forEach(areaOfStudy => {
+        const liElement = document.createElement("li");
+        liElement.textContent = areaOfStudy;
+        areasOfStudyElement.appendChild(liElement);
+    });
+
+    // Set the professor email
+    const emailElement = document.querySelectorAll(".email-content")[index];
+    emailElement.textContent = professorEmail;
+}
+
+
+//     // Create the elements for the job
+//     const jobElement = document.createElement('div');
+//     const titleElement = document.createElement('h3');
+//     const companyElement = document.createElement('p');
+//     const locationElement = document.createElement('p');
+//     const descriptionElement = document.createElement('p');
+//     const applyButton = document.createElement('a');
   
-    // Set the content and attributes of the elements
-    titleElement.textContent = job.title;
-    companyElement.textContent = job.company;
-    locationElement.textContent = job.location;
-    descriptionElement.textContent = job.description;
-    applyButton.textContent = 'Apply Now';
-    applyButton.href = job.apply_url;
+//     // Set the content and attributes of the elements
+//     titleElement.textContent = job.title;
+//     companyElement.textContent = job.company;
+//     locationElement.textContent = job.location;
+//     descriptionElement.textContent = job.description;
+//     applyButton.textContent = 'Apply Now';
+//     applyButton.href = job.apply_url;
   
-    // Append the elements to the job element
-    jobElement.appendChild(titleElement);
-    jobElement.appendChild(companyElement);
-    jobElement.appendChild(locationElement);
-    jobElement.appendChild(descriptionElement);
-    jobElement.appendChild(applyButton);
+//     // Append the elements to the job element
+//     jobElement.appendChild(titleElement);
+//     jobElement.appendChild(companyElement);
+//     jobElement.appendChild(locationElement);
+//     jobElement.appendChild(descriptionElement);
+//     jobElement.appendChild(applyButton);
   
-    // Append the job element to the featured jobs container
-    featuredJobsContainer.appendChild(jobElement);
-  }
+//     // Append the job element to the featured jobs container
+//     featuredJobsContainer.appendChild(jobElement);
+//   }
   
 // const url = "professor.json";
 
