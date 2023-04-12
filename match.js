@@ -34,6 +34,7 @@ matchButton.addEventListener('click', event => {
 
 
 function generateProfessorElement(professor) {
+    console.log(1)
     // Display the selected professors
     const professorName = professor.first_name + " " + professor.last_name;
     const professorImageUrl = professor.image;
@@ -64,35 +65,7 @@ function generateProfessorElement(professor) {
     const emailElement = document.querySelectorAll(".email-content")[index];
     emailElement.textContent = professorEmail;
 }
-
-
-//     // Create the elements for the job
-//     const jobElement = document.createElement('div');
-//     const titleElement = document.createElement('h3');
-//     const companyElement = document.createElement('p');
-//     const locationElement = document.createElement('p');
-//     const descriptionElement = document.createElement('p');
-//     const applyButton = document.createElement('a');
-  
-//     // Set the content and attributes of the elements
-//     titleElement.textContent = job.title;
-//     companyElement.textContent = job.company;
-//     locationElement.textContent = job.location;
-//     descriptionElement.textContent = job.description;
-//     applyButton.textContent = 'Apply Now';
-//     applyButton.href = job.apply_url;
-  
-//     // Append the elements to the job element
-//     jobElement.appendChild(titleElement);
-//     jobElement.appendChild(companyElement);
-//     jobElement.appendChild(locationElement);
-//     jobElement.appendChild(descriptionElement);
-//     jobElement.appendChild(applyButton);
-  
-//     // Append the job element to the featured jobs container
-//     featuredJobsContainer.appendChild(jobElement);
-//   }
-  
+ 
 // const url = "professor.json";
 
 // fetch(url)
