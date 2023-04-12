@@ -50,6 +50,30 @@
 // }
 
 
+
+
+
+
+
+
+
+
+// function getStudentData() {
+//     let student = {
+//         nameInput : document.querySelector('input[name="Name"]'),
+//         emailInput : document.querySelector('input[name="Email"]'),
+//         yearInput : document.querySelector('input[name="Year"]'),
+//         area1Input : document.querySelector('input[name="Area1"]'),
+//         area2Input : document.querySelector('input[name="Area2"]'),
+//         area3Input : document.querySelector('input[name="Area3"]')
+
+//     };
+    
+//     // Now you can use the 'student' object as needed, such as sending it to a server or storing it in local storage.
+    
+//     console.log(student);
+//   }
+  
 // import { writeFile } from 'fs'; // require the Node.js file system module
 
 // function getStudentData(){
