@@ -34,7 +34,6 @@ matchButton.addEventListener('click', event => {
 
 
 function generateProfessorElement(professor) {
-    console.log(1)
     // Display the selected professors
     const professorName = professor.first_name + " " + professor.last_name;
     const professorImageUrl = professor.image;
