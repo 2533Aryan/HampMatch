@@ -58,6 +58,7 @@ function matchProfessors(interest1, interest2, interest3, professorData) {
     for (let i = 0; i < 3; i++) {
         selectedProfessors.push(shuffledProfessors[i]);
     }
+    console.log(professorData[0].area_of_study_1)
     return selectedProfessors;
 
     // let matchingProfessors = [];
