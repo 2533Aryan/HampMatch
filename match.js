@@ -4,7 +4,7 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         // Select three random professors
-        const selectedProfessors = matchProfessors("Computer Science", "Math", "Animation", data.professors)
+        const selectedProfessors = matchProfessors("Biology", "Math", "Animation", data.professors)
         //selectRandomProfessors(data.professors, 3);
 
         // Display the selected professors
@@ -65,13 +65,13 @@ function matchProfessors(interest1, interest2, interest3, professorData) {
   
     professorData.forEach((professor) => {
       let score = 0;
-      if (professor.area_of_study_1.includes(interest1.toLowerCase())) {
+      if (professor.area_of_study_1.includes(interest1)) {
         score += 3;
       }
-      if (professor.area_of_study_2.includes(interest2).toLowerCase()) {
+      if (professor.area_of_study_2.includes(interest2)) {
         score += 2;
       }
-      if (professor.area_of_study_3.includes(interest3).toLowerCase()) {
+      if (professor.area_of_study_3.includes(interest3)) {
         score += 1;
       }
       professor.score = score;
@@ -79,7 +79,7 @@ function matchProfessors(interest1, interest2, interest3, professorData) {
     });
   
     matchingProfessors.sort((a, b) => b.score - a.score);
-  
+    console.log(matchingProfessors);
     return matchingProfessors.slice(0, 3);
   }
 
