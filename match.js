@@ -55,30 +55,30 @@ fetch(url)
 function matchProfessors(interest1, interest2, interest3, professorData) {
     const selectedProfessors = [];
     const shuffledProfessors = professorData.sort(() => 0.5 - Math.random());
-    for (let i = 0; i < num; i++) {
+    for (let i = 0; i < 3; i++) {
         selectedProfessors.push(shuffledProfessors[i]);
     }
     return selectedProfessors;
 
-    let matchingProfessors = [];
+    // let matchingProfessors = [];
   
-    professorData.professors.forEach((professor) => {
-      let score = 0;
-      if (professor.expertise.includes(interest1)) {
-        score += 3;
-      }
-      if (professor.expertise.includes(interest2)) {
-        score += 2;
-      }
-      if (professor.expertise.includes(interest3)) {
-        score += 1;
-      }
-      professor.score = score;
-      matchingProfessors.push(professor);
-    });
+    // professorData.professors.forEach((professor) => {
+    //   let score = 0;
+    //   if (professor.expertise.includes(interest1)) {
+    //     score += 3;
+    //   }
+    //   if (professor.expertise.includes(interest2)) {
+    //     score += 2;
+    //   }
+    //   if (professor.expertise.includes(interest3)) {
+    //     score += 1;
+    //   }
+    //   professor.score = score;
+    //   matchingProfessors.push(professor);
+    // });
   
-    matchingProfessors.sort((a, b) => b.score - a.score);
+    // matchingProfessors.sort((a, b) => b.score - a.score);
   
-    return matchingProfessors.slice(0, 3);
+    // return matchingProfessors.slice(0, 3);
   }
 
