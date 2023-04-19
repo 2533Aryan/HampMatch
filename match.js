@@ -53,6 +53,13 @@ fetch(url)
 
 // Algorithm to match professor
 function matchProfessors(interest1, interest2, interest3, professorData) {
+    const selectedProfessors = [];
+    const shuffledProfessors = professorData.sort(() => 0.5 - Math.random());
+    for (let i = 0; i < num; i++) {
+        selectedProfessors.push(shuffledProfessors[i]);
+    }
+    return selectedProfessors;
+
     let matchingProfessors = [];
   
     professorData.professors.forEach((professor) => {
