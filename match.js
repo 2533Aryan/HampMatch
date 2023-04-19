@@ -48,3 +48,28 @@ function selectRandomProfessors(professors, num) {
     }
     return selectedProfessors;
 }
+
+
+// Algorithm to match professor
+function matchProfessors(interest1, interest2, interest3, professorData) {
+    let matchingProfessors = [];
+  
+    professorData.professors.forEach((professor) => {
+      let score = 0;
+      if (professor.expertise.includes(interest1)) {
+        score += 3;
+      }
+      if (professor.expertise.includes(interest2)) {
+        score += 2;
+      }
+      if (professor.expertise.includes(interest3)) {
+        score += 1;
+      }
+      professor.score = score;
+      matchingProfessors.push(professor);
+    });
+  
+    matchingProfessors.sort((a, b) => b.score - a.score);
+  
+    return matchingProfessors.slice(0, 3);
+  }
