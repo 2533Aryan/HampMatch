@@ -5,7 +5,6 @@ fetch(url)
     .then(data => {
         // Select three random professors
         const selectedProfessors = matchProfessors("Biology", "Math", "Animation", data.professors)
-        //selectRandomProfessors(data.professors, 3);
 
         // Display the selected professors
         selectedProfessors.forEach((professor, index) => {
@@ -41,26 +40,9 @@ fetch(url)
     })
     .catch(error => console.error(error));
 
-// function selectRandomProfessors(professors, num) {
-//     const selectedProfessors = [];
-//     const shuffledProfessors = professors.sort(() => 0.5 - Math.random());
-//     for (let i = 0; i < num; i++) {
-//         selectedProfessors.push(shuffledProfessors[i]);
-//     }
-//     return selectedProfessors;
-// }
-
 
 // Algorithm to match professor
 function matchProfessors(interest1, interest2, interest3, professorData) {
-    // const selectedProfessors = [];
-    // const shuffledProfessors = professorData.sort(() => 0.5 - Math.random());
-    // for (let i = 0; i < 3; i++) {
-    //     selectedProfessors.push(shuffledProfessors[i]);
-    // }
-    // console.log(professorData[0].area_of_study_1)
-    // return selectedProfessors;
-
     const matchingProfessors = [];
   
     professorData.forEach((professor) => {
@@ -82,4 +64,3 @@ function matchProfessors(interest1, interest2, interest3, professorData) {
     console.log(matchingProfessors);
     return matchingProfessors.slice(0, 3);
   }
-
