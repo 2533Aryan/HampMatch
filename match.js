@@ -40,7 +40,7 @@ fetch(url)
     })
     .catch(error => console.error(error));
 
-    
+
 
 // Algorithm to match professor
 function matchProfessors(interest1, interest2, interest3, professorData) {
