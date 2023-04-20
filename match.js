@@ -65,3 +65,5 @@ function matchProfessors(interest1, interest2, interest3, professorData) {
     console.log(matchingProfessors);
     return matchingProfessors.slice(0, 3);
   }
+
+  
