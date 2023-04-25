@@ -1,13 +1,8 @@
 function getData(){
-  console.log(1)
-  const profInterest1 = document.querySelector('input[type="text"][name="Name"]').value;
-
-  console.log(profInterest1)
-
-  // const profInterest2 = document.getElementById("Email").value;
-  // const profInterest3 = document.getElementById("Year").value;
-  // console.log(profInterest1)
-  // matchProf(profInterest1,profInterest2,profInterest3);
+  const profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
+  const profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
+  const profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
+  matchProf(profInterest1, profInterest2, profInterest3);
 }
 
 
