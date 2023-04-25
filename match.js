@@ -2,11 +2,11 @@ function getData(){
   const profInterest1 = document.getElementById("Name").value;
   const profInterest2 = document.getElementById("Email").value;
   const profInterest3 = document.getElementById("Year").value;
-  
+  matchProf(profInterest1,profInterest2,profInterest3);
 }
 
 
-function matchProf(){
+function matchProf(profInterest1, profInterest2, profInterest3){
   const url = "professor.json";
 
   fetch(url)
