@@ -41,9 +41,6 @@ const app = {
         fetch(url)
             .then(response => response.json())
             .then(app.showPosts)
-        // fetch(req)
-        //     .then(resp => resp.json())
-        //     .then(app.showPosts)
             .catch(app.err);
     },
     getUsers: () => {
