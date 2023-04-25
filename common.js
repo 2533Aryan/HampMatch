@@ -38,9 +38,12 @@ const app = {
             method: 'GET',
             mode: 'cors'
         });
-        fetch(req)
-            .then(resp => resp.json())
+        fetch(url)
+            .then(response => response.json())
             .then(app.showPosts)
+        // fetch(req)
+        //     .then(resp => resp.json())
+        //     .then(app.showPosts)
             .catch(app.err);
     },
     getUsers: () => {
