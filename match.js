@@ -1,6 +1,9 @@
-const profInterest1 = document.getElementById("Name").value;
-const profInterest2 = document.getElementById("Email").value;
-const profInterest3 = document.getElementById("Year").value;
+function getData(){
+  const profInterest1 = document.getElementById("Name").value;
+  const profInterest2 = document.getElementById("Email").value;
+  const profInterest3 = document.getElementById("Year").value;
+  
+}
 
 const url = "professor.json";
 
