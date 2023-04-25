@@ -1,3 +1,8 @@
+const profInterest1 = document.getElementById("area1").value;
+const profInterest2 = document.getElementById("area2").value;
+const profInterest3 = document.getElementById("area3").value;
+
+
 const url = "professor.json";
 
 fetch(url)
