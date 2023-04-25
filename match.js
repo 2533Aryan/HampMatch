@@ -9,7 +9,7 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         // Select three random professors
-        const selectedProfessors = matchProfessors("Biology", "Math", "Machine Learning", data.professors)
+        const selectedProfessors = matchProfessors(profInterest1, profInterest2, profInterest3, data.professors)
 
         // Display the selected professors
         selectedProfessors.forEach((professor, index) => {
