@@ -1,8 +1,13 @@
 function getData(){
-  const profInterest1 = document.getElementById("Name").value;
-  const profInterest2 = document.getElementById("Email").value;
-  const profInterest3 = document.getElementById("Year").value;
-  matchProf(profInterest1,profInterest2,profInterest3);
+  console.log(1)
+  const profInterest1 = document.querySelector('input[type="text"][name="Name"]').value;
+
+  console.log(profInterest1)
+
+  // const profInterest2 = document.getElementById("Email").value;
+  // const profInterest3 = document.getElementById("Year").value;
+  // console.log(profInterest1)
+  // matchProf(profInterest1,profInterest2,profInterest3);
 }
 
 
@@ -54,7 +59,7 @@ function matchProf(profInterest1, profInterest2, profInterest3){
   // Algorithm to match professor
   function matchProfessors(interest1, interest2, interest3, professorData) {
       const matchingProfessors = [];
-    
+      console.log(interest1);
       professorData.forEach((professor) => {
         let score = 0;
         if (professor.area_of_study_1.includes(interest1)) {
