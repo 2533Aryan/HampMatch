@@ -1,5 +1,5 @@
 const app = {
-    baseURL: 'http://jsonplaceholder.typicode.com/',
+    baseURL: 'professor.json',
     init: () => {
         document.addEventListener('DOMContentLoaded', app.load);
         console.log('HTML loaded');
@@ -28,16 +28,12 @@ const app = {
                 app.getUsers();
                 //add custom event listeners for users page
                 break;
-            case 'photos':
-                // app.authorize();
-                //app.getPhotos();
-                //add other custom functions
             default:
                 app.somethingElse();
         }
     },
     getPosts: () => {
-        let url = app.baseURL + 'posts';
+        let url = app.baseURL;
         let req = new Request(url, {
             method: 'GET',
             mode: 'cors'
@@ -48,7 +44,7 @@ const app = {
             .catch(app.err);
     },
     getUsers: () => {
-        let url = app.baseURL + 'users';
+        let url = app.baseURL;
         let req = new Request(url, {
             method: 'GET',
             mode: 'cors'
@@ -57,9 +53,6 @@ const app = {
             .then(resp => resp.json())
             .then(app.showUsers)
             .catch(app.err);
-    },
-    somethingElse: () => {
-        //another function that runs based on a different page loading
     },
     showPosts: (posts) => {
         //remove the loading li
