@@ -79,7 +79,15 @@ const app = {
             //     a.click();
             // }
             // download(jsonData, 'json.txt', 'text/plain');
-
+            module.exports = {
+                webpack5: true,
+                webpack: (config) => {
+                  config.resolve.fallback = { fs: false };
+              
+                  return config;
+                },
+              };
+              
             const fs = require('fs');
             const fileName = './data.json';
             const file = require(fileName);
