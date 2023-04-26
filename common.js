@@ -21,6 +21,7 @@ const app = {
         let page = document.body.id;
         switch (page) {
             case 'posts':
+                app.run();
                 app.getPosts();
                 //add custom event listeners for posts page
                 break;
@@ -53,6 +54,22 @@ const app = {
             .then(resp => resp.json())
             .then(app.showUsers)
             .catch(app.err);
+    },
+    run: () => {
+        var firstname = document.getElementById("firstname")
+        var lastname = document.getElementById("lastname")
+        var jsonBtn = document.getElementById("jsonbtn")
+        var jsonText = document.getElementById("jsontext")
+
+
+
+        jsonBtn.addEventListener("click", function(){
+            var data = {
+                "firstName":firstname.value,
+                "lastName":lastname.value
+            }
+            jsonText.innerHTML = JSON.stringify(data)
+        })
     },
     showPosts: (posts) => {
         //remove the loading li
