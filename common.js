@@ -26,7 +26,7 @@ const app = {
                 break;
             case 'users':
                 app.run();
-                app.getUsers();
+                // app.getUsers();
                 //add custom event listeners for users page
                 break;
             default:
@@ -68,7 +68,15 @@ const app = {
                 "firstName":firstname.value,
                 "lastName":lastname.value
             }
-            jsonText.innerHTML = JSON.stringify(data)
+            jsonData = JSON.stringify(data);
+            Text.innerHTML = jsonData;
+
+            var fs = require('fs');
+            fs.writeFile("test.txt", data, function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            });
         })
     },
     showPosts: (posts) => {
