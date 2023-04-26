@@ -69,13 +69,27 @@ const app = {
                 "lastName":lastname.value
             }
             jsonData = JSON.stringify(data);
-            Text.innerHTML = jsonData;
+            jsonText.innerHTML = jsonData;
 
-            var fs = require('fs');
-            fs.writeFile("test.txt", data, function(err) {
-                if (err) {
-                    console.log(err);
-                }
+            // function download(content, fileName, contentType) {
+            //     var a = document.createElement("a");
+            //     var file = new Blob([content], {type: contentType});
+            //     a.href = URL.createObjectURL(file);
+            //     a.download = fileName;
+            //     a.click();
+            // }
+            // download(jsonData, 'json.txt', 'text/plain');
+
+            const fs = require('fs');
+            const fileName = './data.json';
+            const file = require(fileName);
+                
+            file.key = "new value";
+                
+            fs.writeFile(fileName, JSON.stringify(file), function writeJSON(err) {
+              if (err) return console.log(err);
+              console.log(JSON.stringify(file));
+              console.log('writing to ' + fileName);
             });
         })
     },
