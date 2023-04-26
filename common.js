@@ -21,11 +21,11 @@ const app = {
         let page = document.body.id;
         switch (page) {
             case 'posts':
-                app.run();
                 app.getPosts();
                 //add custom event listeners for posts page
                 break;
             case 'users':
+                app.run();
                 app.getUsers();
                 //add custom event listeners for users page
                 break;
