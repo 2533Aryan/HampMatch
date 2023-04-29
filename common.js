@@ -26,7 +26,6 @@ const app = {
                 break;
             case 'users':
                 app.run();
-                // app.getUsers();
                 //add custom event listeners for users page
                 break;
             default:
@@ -85,21 +84,6 @@ const app = {
             let li = document.createElement('li');
             li.textContent = post.first_name;
             li.setAttribute('data-id', post.first_name);
-            df.appendChild(li);
-        });
-        ul.appendChild(df);
-    },
-    showUsers: (users) => {
-        //remove the loading li
-        let ul = document.querySelector('.list');
-        ul.innerHTML = '';
-        // create a list with the user data
-        let df = document.createDocumentFragment();
-        console.log(users);
-        users.forEach(user => {
-            let li = document.createElement('li');
-            li.textContent = user.email;
-            li.setAttribute('data-id', user.id);
             df.appendChild(li);
         });
         ul.appendChild(df);
