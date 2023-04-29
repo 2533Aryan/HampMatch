@@ -5,6 +5,7 @@ const app = {
         console.log('HTML loaded');
     },
     load: () => {
+        var data = [];
         //the page had finished loading its HTML
         app.showLoading();
         app.getData();
@@ -49,7 +50,7 @@ const app = {
         var jsonBtn = document.getElementById("jsonbtn")
 
         jsonBtn.addEventListener("click", function(){
-            var data = [firstname.value, lastname.value];
+            data = [firstname.value, lastname.value];
             app.getPosts();
         })
     },
