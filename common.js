@@ -26,7 +26,7 @@ const app = {
                 break;
             case 'users':
                 app.showLoading();
-                app.run();
+                app.run2();
                 //add custom event listeners for users page
                 break;
             default:
@@ -51,8 +51,11 @@ const app = {
         
         jsonBtn.addEventListener("click", function(){
             data = [firstname.value, lastname.value];
-            app.getPosts();
+            // app.getPosts();
         })
+    },
+    run2: () => {
+        app.getPosts();
     },
     showPosts: (posts) => {
         //remove the loading li
