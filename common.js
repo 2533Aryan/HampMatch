@@ -47,7 +47,6 @@ const app = {
         var firstname = document.getElementById("firstname")
         var lastname = document.getElementById("lastname")
         var jsonBtn = document.getElementById("jsonbtn")
-        var jsonText = document.getElementById("jsontext")
 
         jsonBtn.addEventListener("click", function(){
             var data = [firstname.value, lastname.value];
