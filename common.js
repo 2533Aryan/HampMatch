@@ -22,7 +22,8 @@ const app = {
         let page = document.body.id;
         switch (page) {
             case 'posts':
-                app.getPosts();
+                app.run();
+                // app.getPosts();
                 //add custom event listeners for posts page
                 break;
             case 'users':
