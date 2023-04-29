@@ -49,7 +49,7 @@ const app = {
         var firstname = document.getElementById("firstname")
         var lastname = document.getElementById("lastname")
         var jsonBtn = document.getElementById("jsonbtn")
-
+        
         jsonBtn.addEventListener("click", function(){
             data = [firstname.value, lastname.value];
             app.getPosts();
@@ -64,6 +64,7 @@ const app = {
         //console.log(posts);
         posts.professors.forEach(post => {
             if(post.first_name = data[0]){
+                data = [];
                 let li = document.createElement('li');
                 li.textContent = post.first_name;
                 li.setAttribute('data-id', post.first_name);
