@@ -43,17 +43,6 @@ const app = {
             .then(app.showPosts)
             .catch(app.err);
     },
-    getUsers: () => {
-        let url = app.baseURL;
-        let req = new Request(url, {
-            method: 'GET',
-            mode: 'cors'
-        });
-        fetch(req)
-            .then(resp => resp.json())
-            .then(app.showUsers)
-            .catch(app.err);
-    },
     run: () => {
         var firstname = document.getElementById("firstname")
         var lastname = document.getElementById("lastname")
