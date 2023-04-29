@@ -62,10 +62,12 @@ const app = {
         let df = document.createDocumentFragment();
         //console.log(posts);
         posts.professors.forEach(post => {
-            let li = document.createElement('li');
-            li.textContent = post.first_name;
-            li.setAttribute('data-id', post.first_name);
-            df.appendChild(li);
+            if(post.first_name = data[0]){
+                let li = document.createElement('li');
+                li.textContent = post.first_name;
+                li.setAttribute('data-id', post.first_name);
+                df.appendChild(li);
+            }
         });
         ul.appendChild(df);
     },
