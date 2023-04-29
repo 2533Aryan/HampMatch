@@ -68,38 +68,10 @@ const app = {
                 "firstName":firstname.value,
                 "lastName":lastname.value
             }
-            jsonData = JSON.stringify(data);
-            jsonText.innerHTML = jsonData;
+            // jsonData = JSON.stringify(data);
+            // jsonText.innerHTML = jsonData;
 
             app.getPosts();
-            // function download(content, fileName, contentType) {
-            //     var a = document.createElement("a");
-            //     var file = new Blob([content], {type: contentType});
-            //     a.href = URL.createObjectURL(file);
-            //     a.download = fileName;
-            //     a.click();
-            // }
-            // download(jsonData, 'json.txt', 'text/plain');
-            // module.exports = {
-            //     webpack5: true,
-            //     webpack: (config) => {
-            //       config.resolve.fallback = { fs: false };
-              
-            //       return config;
-            //     },
-            //   };
-              
-            // const fs = require('fs');
-            // const fileName = './data.json';
-            // const file = require(fileName);
-                
-            // file.key = "new value";
-                
-            // fs.writeFile(fileName, JSON.stringify(file), function writeJSON(err) {
-            //   if (err) return console.log(err);
-            //   console.log(JSON.stringify(file));
-            //   console.log('writing to ' + fileName);
-            // });
         })
     },
     showPosts: (posts) => {
