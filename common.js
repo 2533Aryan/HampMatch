@@ -60,16 +60,8 @@ const app = {
         var jsonBtn = document.getElementById("jsonbtn")
         var jsonText = document.getElementById("jsontext")
 
-
-
         jsonBtn.addEventListener("click", function(){
-            var data = {
-                "firstName":firstname.value,
-                "lastName":lastname.value
-            }
-            // jsonData = JSON.stringify(data);
-            // jsonText.innerHTML = jsonData;
-
+            var data = [firstname.value, lastname.value];
             app.getPosts();
         })
     },
