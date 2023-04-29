@@ -7,7 +7,6 @@ const app = {
     load: () => {
         var data = [];
         //the page had finished loading its HTML
-        app.showLoading();
         app.getData();
     },
     showLoading: () => {
@@ -26,6 +25,7 @@ const app = {
                 //add custom event listeners for posts page
                 break;
             case 'users':
+                app.showLoading();
                 app.run();
                 //add custom event listeners for users page
                 break;
