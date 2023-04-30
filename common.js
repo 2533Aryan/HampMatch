@@ -26,7 +26,7 @@ const app = {
                 break;
             case 'users':
                 app.showLoading();
-                app.run2();
+                // app.run2();
                 //add custom event listeners for users page
                 break;
             default:
@@ -51,10 +51,13 @@ const app = {
         
         jsonBtn.addEventListener("click", function(){
             data = [firstname.value, lastname.value];
-            // app.getPosts();
+            app.run2();
+            // console.log(data);
         })
     },
     run2: () => {
+        console.log(window.location.search);
+        window.location.href='page-two.html'
         app.getPosts();
     },
     showPosts: (posts) => {
@@ -63,7 +66,7 @@ const app = {
         ul.innerHTML = '';
         // create a list with the post data
         let df = document.createDocumentFragment();
-        //console.log(posts);
+        console.log(data);
         posts.professors.forEach(post => {
             if(post.first_name = data[0]){
                 data = [];
