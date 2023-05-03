@@ -94,6 +94,12 @@ const app = {
     heading2.textContent  = "Matches";
     heading2.id = "big";
     document.body.appendChild(heading2);
+
+    // Div element - Container
+    var divContainer = document.createElement('div');
+    divContainer.className = "container";
+    document.body.appendChild(divContainer);
+
     // <div class="container">
     //   <div class="outer-box2">
     //     <div class="inner-box2"><div class="prof-name"></div></div>
