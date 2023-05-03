@@ -163,8 +163,10 @@ const app = {
       
 
       // Break Element
-      var breakElement = document.createElement('br');
-      document.body.appendChild(breakElement);
+      if (i<1){
+        var breakElement = document.createElement('br');
+        document.body.appendChild(breakElement);
+      }
     }
 
 
@@ -179,7 +181,7 @@ const app = {
     divSubmitButton.appendChild(linkSubmitButton);
 
     // Button
-    var submitButton = document.createElement('a');
+    var submitButton = document.createElement('button');
     submitButton.textContent  = "HOME";
     linkSubmitButton.appendChild(submitButton);
 
