@@ -74,6 +74,9 @@ const app = {
     console.log(matchingProfessors);
     // return matchingProfessors.slice(0, 3);
   },
+  results: () => {
+    
+  },
   err: (err) => {
       //display the error to the user
       let div = document.createElement('div');
