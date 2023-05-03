@@ -20,15 +20,15 @@ const app = {
       }
   },
   run: () => {
-    var profInterest1 = document.getElementById('area1');
-    var profInterest2 = document.getElementById('area2');
-    var profInterest3 = document.getElementById('area3');
+    var studInterest1 = document.getElementById('area1');
+    var studInterest2 = document.getElementById('area2');
+    var studInterest3 = document.getElementById('area3');
   
     var submitButton = document.getElementById("match-button");
 
     submitButton.addEventListener("click", function(){
       // console.log(profInterest1.value, profInterest2.value, profInterest3.value);
-      studentData = [profInterest1.value, profInterest2.value, profInterest3.value];
+      studentData = [studInterest1.value, studInterest2.value, studInterest3.value];
       app.getPosts();
     })
   },
@@ -45,7 +45,7 @@ const app = {
   },
   showPosts: (posts) => {
       // create a list with the post data
-      let df = document.createDocumentFragment();
+      // let df = document.createDocumentFragment();
       
       posts.professors.forEach(post => {
           console.log(post);
