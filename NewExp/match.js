@@ -157,13 +157,7 @@ const app = {
     pNewEmailContent.textContent ="";
     pNewEmail.appendChild(pNewEmailContent);
     
-    // <div class="container">
-    //   <div class="outer-box2">
-    //     <div class="inner-box2"><div class="prof-name"></div></div>
-    //     <div class="img-content"><img src="" alt="Professor Image"></div>
-    //     <div class="prof-area"><p class="area-heading">Area of study:</p></div>
-    //     <div class="prof-email"><p class="email-heading">Email:</p><p class="email-content"></p></div>
-    //   </div>
+
     console.log(1)
   },
   err: (err) => {
