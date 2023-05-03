@@ -7,8 +7,9 @@ function getData(){
   profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
   profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
   profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
-  return profInterest1, profInterest2, profInterest3;
+  console.log(profInterest1, profInterest2, profInterest3);
 }
+
 
 
 const url = "professor.json";
