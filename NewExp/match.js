@@ -9,12 +9,10 @@ const app = {
       app.getData();
   },
   getData: () => {
-      //based on the current page...
       let page = document.body.id;
       switch (page) {
           case 'main':
               app.run();
-              //add custom event listeners for posts page
               break;
           default:
               app.somethingElse();
@@ -32,15 +30,14 @@ const app = {
           .catch(app.err);
   },
   run: () => {
-      var firstname = document.getElementById("firstname")
-      var lastname = document.getElementById("lastname")
-      var jsonBtn = document.getElementById("jsonbtn")
-      
-      jsonBtn.addEventListener("click", function(){
-          data = [firstname.value, lastname.value];
-          app.run2();
-          // console.log(data);
-      })
+    var profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
+    var profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
+    var profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
+  
+    var submitButton = document.getElementById("match-button");
+    submitButton.addEventListener("click", function(){
+      console.log(profInterest1, profInterest2, profInterest3);
+    })
   },
   run2: () => {
       console.log(window.location.search);
@@ -83,15 +80,6 @@ const app = {
 app.init();
 
 
-// var submitButton = document.getElementById("match-button");
-        
-// submitButton.addEventListener("click", function(){
-//   // var profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
-//   // var profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
-//   // var profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
-
-//   // console.log(profInterest1, profInterest2, profInterest3);
-// })
 
 // const url = "professor.json";
 
