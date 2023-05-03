@@ -127,6 +127,18 @@ const app = {
     imgElement.alt ="Professor Image";
     divImgContent.appendChild(imgElement);
 
+
+    // Continer - new div - Prof Area
+    var divProfArea = document.createElement('div');
+    divProfArea.className = "prof-area";
+    divOuterBox2.appendChild(divProfArea);
+
+    // Prof Area - new area heading element 
+    var pNewArea = document.createElement('p');
+    pNewArea.className = "area-heading";
+    pNewArea.textContent ="Area of study:";
+    divProfArea.appendChild(pNewArea);
+
     // <div class="container">
     //   <div class="outer-box2">
     //     <div class="inner-box2"><div class="prof-name"></div></div>
