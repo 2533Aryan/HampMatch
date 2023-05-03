@@ -139,6 +139,18 @@ const app = {
     pNewArea.textContent ="Area of study:";
     divProfArea.appendChild(pNewArea);
 
+
+    // Continer - new div - Prof Email
+    var divProfEmail = document.createElement('div');
+    divProfEmail.className = "prof-email";
+    divOuterBox2.appendChild(divProfEmail);
+
+    // Prof Email - new email heading element 
+    var pNewEmail = document.createElement('p');
+    pNewEmail.className = "email-heading";
+    pNewEmail.textContent ="Email:";
+    divProfEmail.appendChild(pNewEmail);
+
     // <div class="container">
     //   <div class="outer-box2">
     //     <div class="inner-box2"><div class="prof-name"></div></div>
