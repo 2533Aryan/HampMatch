@@ -53,19 +53,6 @@ const app = {
         .then(app.matchProfessors)
         .catch(app.err);
   },
-  showPosts: (posts) => {
-      // create a list with the post data
-      // let df = document.createDocumentFragment();
-      
-      posts.professors.forEach(post => {
-          console.log(post);
-          // let li = document.createElement('li');
-          // li.textContent = post.first_name;
-          // li.setAttribute('data-id', post.first_name);
-          // df.appendChild(li);
-      });
-      // ul.appendChild(df);
-  },
   matchProfessors: (professorData) => {
     const matchingProfessors = [];  
     professorData.professors.forEach(professor => {
