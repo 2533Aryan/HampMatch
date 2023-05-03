@@ -101,7 +101,8 @@ const app = {
     divContainer.className = "container";
     document.body.appendChild(divContainer);
     
-    
+
+    // Professors detail
     for (i=0; i<3; i++){
       // Continer - new div - Outer Box 2
       var divOuterBox2 = document.createElement('div');
@@ -167,15 +168,10 @@ const app = {
     }
 
 
-    
-
-  //   <div class="outer-box2">
-  //   <div class="inner-box2"><div class="prof-name"></div></div>
-  //   <div class="img-content"><img src="" alt="Professor Image"></div>
-  //   <div class="prof-area"><p class="area-heading">Area of study:</p></div>
-  //   <div class="prof-email"><p class="email-heading">Email:</p><p class="email-content"></p></div>
-  // </div>
-  // <br>    
+    // 
+    // <div id="submit">
+    //   <a href="main-page.html"><button>HOME</button></a>
+    // </div> 
     console.log(1)
   },
   err: (err) => {
