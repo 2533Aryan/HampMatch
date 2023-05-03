@@ -27,10 +27,11 @@ const app = {
 
     submitButton.addEventListener("click", function(){
       console.log(profInterest1.value, profInterest2.value, profInterest3.value);
+      app.getPosts(profInterest1.value, profInterest2.value, profInterest3.value);
 
     })
   },
-  getPosts: () => {
+  getPosts: (interest1, interest2, interest3) => {
     let url = app.baseURL;
     let req = new Request(url, {
         method: 'GET',
@@ -38,23 +39,46 @@ const app = {
     });
     fetch(url)
         .then(response => response.json())
-        .then(app.showPosts)
+        .then(app.matchProfessors(interest1, interest2, interest3))
         .catch(app.err);
   },
   showPosts: (posts) => {
-      //remove the loading li
-      let ul = document.querySelector('.list');
-      ul.innerHTML = '';
       // create a list with the post data
       let df = document.createDocumentFragment();
-      console.log(data);
+      
       posts.professors.forEach(post => {
-          let li = document.createElement('li');
-          li.textContent = post.first_name;
-          li.setAttribute('data-id', post.first_name);
-          df.appendChild(li);
+          console.log(post);
+          // let li = document.createElement('li');
+          // li.textContent = post.first_name;
+          // li.setAttribute('data-id', post.first_name);
+          // df.appendChild(li);
       });
-      ul.appendChild(df);
+      // ul.appendChild(df);
+  },
+  matchProfessors: (interest1, interest2, interest3, professorData) => {
+    // var interest1 = profInterest1.value;
+    // var interest2 = profInterest2.value;
+    // var interest3 = profInterest3.value;
+    
+    const matchingProfessors = [];  
+    professorData.forEach((professor) => {
+      let score = 0;
+      if (professor.area_of_study_1.includes(interest1)) {
+        score += 3;
+      }
+      if (professor.area_of_study_2.includes(interest2)) {
+        score += 2;
+      }
+      if (professor.area_of_study_3.includes(interest3)) {
+        score += 1;
+      }
+      professor.score = score;
+      matchingProfessors.push(professor);
+    });
+  
+    matchingProfessors.sort((a, b) => b.score - a.score);
+    console.log(matchingProfessors);
+    // return matchingProfessors.slice(0, 3);
   },
   err: (err) => {
       //display the error to the user
@@ -116,25 +140,25 @@ app.init();
 
 
 
-// Algorithm to match professor
-function matchProfessors(interest1, interest2, interest3, professorData) {
-    const matchingProfessors = [];
-    professorData.forEach((professor) => {
-      let score = 0;
-      if (professor.area_of_study_1.includes(interest1)) {
-        score += 3;
-      }
-      if (professor.area_of_study_2.includes(interest2)) {
-        score += 2;
-      }
-      if (professor.area_of_study_3.includes(interest3)) {
-        score += 1;
-      }
-      professor.score = score;
-      matchingProfessors.push(professor);
-    });
+// // Algorithm to match professor
+// function matchProfessors(interest1, interest2, interest3, professorData) {
+//     const matchingProfessors = [];
+//     professorData.forEach((professor) => {
+//       let score = 0;
+//       if (professor.area_of_study_1.includes(interest1)) {
+//         score += 3;
+//       }
+//       if (professor.area_of_study_2.includes(interest2)) {
+//         score += 2;
+//       }
+//       if (professor.area_of_study_3.includes(interest3)) {
+//         score += 1;
+//       }
+//       professor.score = score;
+//       matchingProfessors.push(professor);
+//     });
   
-    matchingProfessors.sort((a, b) => b.score - a.score);
-    // console.log(matchingProfessors);
-    return matchingProfessors.slice(0, 3);
-  }
+//     matchingProfessors.sort((a, b) => b.score - a.score);
+//     // console.log(matchingProfessors);
+//     return matchingProfessors.slice(0, 3);
+//   }
