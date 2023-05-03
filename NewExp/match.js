@@ -72,10 +72,24 @@ const app = {
 
     matchingProfessors.sort((a, b) => b.score - a.score);
     console.log(matchingProfessors);
+    app.switch();
     // return matchingProfessors.slice(0, 3);
   },
-  results: () => {
+  switch: () => {
+    var delMain = document.getElementById('main');
+    delMain.innerText = "";
+    app.showResults();
+  },
+  showResults: () => {
+    var bodyResult = document.getElementById('main');
+    bodyResult.id = "result";
+
+    // bodyResult.innerHTML = "<h1>ProF Match</h1>"
     
+    var heading1 = document.createElement('h1');
+    heading1.textContent  = "ProF Match";
+
+    console.log(1)
   },
   err: (err) => {
       //display the error to the user
