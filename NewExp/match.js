@@ -18,26 +18,27 @@ const app = {
               app.somethingElse();
       }
   },
-  getPosts: () => {
-      let url = app.baseURL;
-      let req = new Request(url, {
-          method: 'GET',
-          mode: 'cors'
-      });
-      fetch(url)
-          .then(response => response.json())
-          .then(app.showPosts)
-          .catch(app.err);
-  },
   run: () => {
     var profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
     var profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
     var profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
   
     var submitButton = document.getElementById("match-button");
+
     submitButton.addEventListener("click", function(){
       console.log(profInterest1, profInterest2, profInterest3);
     })
+  },
+  getPosts: () => {
+    let url = app.baseURL;
+    let req = new Request(url, {
+        method: 'GET',
+        mode: 'cors'
+    });
+    fetch(url)
+        .then(response => response.json())
+        .then(app.showPosts)
+        .catch(app.err);
   },
   run2: () => {
       console.log(window.location.search);
