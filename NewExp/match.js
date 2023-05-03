@@ -6,7 +6,7 @@ const app = {
   },
   load: () => {
       //the page had finished loading its HTML
-      var profData = [];
+      var studentData = [];
       app.getData();
   },
   getData: () => {
@@ -27,8 +27,9 @@ const app = {
     var submitButton = document.getElementById("match-button");
 
     submitButton.addEventListener("click", function(){
-      console.log(profInterest1.value, profInterest2.value, profInterest3.value);
-      profData = [profInterest1.value, profInterest2.value, profInterest3.value];
+      // console.log(profInterest1.value, profInterest2.value, profInterest3.value);
+      studentData = [profInterest1.value, profInterest2.value, profInterest3.value];
+      app.getPosts();
     })
   },
   getPosts: () => {
@@ -39,7 +40,7 @@ const app = {
     });
     fetch(url)
         .then(response => response.json())
-        .then(app.matchProfessors())
+        .then(app.showPosts())
         .catch(app.err);
   },
   showPosts: (posts) => {
@@ -55,10 +56,10 @@ const app = {
       });
       // ul.appendChild(df);
   },
-  matchProfessors: (professorData) => {
-    
+  matchProfessors: (posts) => {
+    console.log(posts.professors);
     const matchingProfessors = [];  
-    professorData.forEach((professor) => {
+    professorData.professors.forEach(professor => {
       let score = 0;
       if (professor.area_of_study_1.includes(profData[0])) {
         score += 3;
@@ -72,7 +73,7 @@ const app = {
       professor.score = score;
       matchingProfessors.push(professor);
     });
-  
+
     matchingProfessors.sort((a, b) => b.score - a.score);
     console.log(matchingProfessors);
     // return matchingProfessors.slice(0, 3);
