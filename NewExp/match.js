@@ -18,7 +18,6 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         // Select three random professors
-        console.log(profInterest1);
         const selectedProfessors = matchProfessors(profInterest1, profInterest2, profInterest3, data.professors)
 
         // Display the selected professors
@@ -76,6 +75,6 @@ function matchProfessors(interest1, interest2, interest3, professorData) {
     });
   
     matchingProfessors.sort((a, b) => b.score - a.score);
-    console.log(matchingProfessors);
+    // console.log(matchingProfessors);
     return matchingProfessors.slice(0, 3);
   }
