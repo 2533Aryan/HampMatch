@@ -19,7 +19,7 @@ const app = {
       }
   },
   run: () => {
-    var profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
+    var profInterest1 = document.getElementById('area1').value;
     var profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
     var profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
   
