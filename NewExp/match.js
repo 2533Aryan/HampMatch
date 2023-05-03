@@ -27,6 +27,7 @@ const app = {
 
     submitButton.addEventListener("click", function(){
       console.log(profInterest1.value, profInterest2.value, profInterest3.value);
+
     })
   },
   getPosts: () => {
@@ -40,11 +41,6 @@ const app = {
         .then(app.showPosts)
         .catch(app.err);
   },
-  run2: () => {
-      console.log(window.location.search);
-      window.location.href='page-two.html'
-      app.getPosts();
-  },
   showPosts: (posts) => {
       //remove the loading li
       let ul = document.querySelector('.list');
@@ -53,20 +49,14 @@ const app = {
       let df = document.createDocumentFragment();
       console.log(data);
       posts.professors.forEach(post => {
-          if(post.first_name = data[0]){
-              data = [];
-              let li = document.createElement('li');
-              li.textContent = post.first_name;
-              li.setAttribute('data-id', post.first_name);
-              df.appendChild(li);
-          }
+          let li = document.createElement('li');
+          li.textContent = post.first_name;
+          li.setAttribute('data-id', post.first_name);
+          df.appendChild(li);
       });
       ul.appendChild(df);
   },
   err: (err) => {
-      //remove the loading li
-      let ul = document.querySelector('.list');
-      ul.innerHTML = '';
       //display the error to the user
       let div = document.createElement('div');
       div.className = 'error msg';
