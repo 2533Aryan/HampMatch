@@ -105,6 +105,11 @@ const app = {
     divOuterBox2.className = "outer-box2";
     divContainer.appendChild(divOuterBox2);
 
+    // Continer - new div - Inner Box 2
+    var divInnerBox2 = document.createElement('div');
+    divInnerBox2.className = "inner-box2";
+    divOuterBox2.appendChild(divInnerBox2);
+    
     // <div class="container">
     //   <div class="outer-box2">
     //     <div class="inner-box2"><div class="prof-name"></div></div>
