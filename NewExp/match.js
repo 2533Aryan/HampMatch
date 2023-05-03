@@ -96,13 +96,13 @@ const app = {
     heading2.id = "big";
     document.body.appendChild(heading2);
 
-
+    // Div element - Container
+    var divContainer = document.createElement('div');
+    divContainer.className = "container";
+    document.body.appendChild(divContainer);
+    
+    
     for (i=0; i<3; i++){
-      // Div element - Container
-      var divContainer = document.createElement('div');
-      divContainer.className = "container";
-      document.body.appendChild(divContainer);
-
       // Continer - new div - Outer Box 2
       var divOuterBox2 = document.createElement('div');
       divOuterBox2.className = "outer-box2";
