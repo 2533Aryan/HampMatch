@@ -151,6 +151,12 @@ const app = {
     pNewEmail.textContent ="Email:";
     divProfEmail.appendChild(pNewEmail);
 
+    // Email Heading - new email content element 
+    var pNewEmailContent = document.createElement('p');
+    pNewEmailContent.className = "email-content";
+    pNewEmailContent.textContent ="";
+    pNewEmail.appendChild(pNewEmailContent);
+    
     // <div class="container">
     //   <div class="outer-box2">
     //     <div class="inner-box2"><div class="prof-name"></div></div>
