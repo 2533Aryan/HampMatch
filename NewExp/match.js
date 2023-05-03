@@ -28,7 +28,17 @@ const app = {
 
     submitButton.addEventListener("click", function(){
       // console.log(profInterest1.value, profInterest2.value, profInterest3.value);
+      if (studInterest1.value == ""){
+        studInterest1.value = -1;
+      }
+      if (studInterest2.value == ""){
+        studInterest2.value = -1;
+      }
+      if (studInterest3.value == ""){
+        studInterest3.value = -1;
+      }
       studentData = [studInterest1.value, studInterest2.value, studInterest3.value];
+      // console.log(studentData);
       app.getPosts();
     })
   },
@@ -40,7 +50,7 @@ const app = {
     });
     fetch(url)
         .then(response => response.json())
-        .then(app.showPosts())
+        .then(app.matchProfessors)
         .catch(app.err);
   },
   showPosts: (posts) => {
@@ -56,18 +66,17 @@ const app = {
       });
       // ul.appendChild(df);
   },
-  matchProfessors: (posts) => {
-    console.log(posts.professors);
+  matchProfessors: (professorData) => {
     const matchingProfessors = [];  
     professorData.professors.forEach(professor => {
       let score = 0;
-      if (professor.area_of_study_1.includes(profData[0])) {
+      if (professor.area_of_study_1.includes(studentData[0])) {
         score += 3;
       }
-      if (professor.area_of_study_2.includes(profData[1])) {
+      if (professor.area_of_study_2.includes(studentData[1])) {
         score += 2;
       }
-      if (professor.area_of_study_3.includes(profData[3])) {
+      if (professor.area_of_study_3.includes(studentData[2])) {
         score += 1;
       }
       professor.score = score;
