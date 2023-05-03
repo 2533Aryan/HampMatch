@@ -84,10 +84,15 @@ const app = {
     var bodyResult = document.getElementById('main');
     bodyResult.id = "result";
 
-    // bodyResult.innerHTML = "<h1>ProF Match</h1>"
-    
+    // Heading1
     var heading1 = document.createElement('h1');
     heading1.textContent  = "ProF Match";
+    document.body.appendChild(heading1);
+
+    // Heading 2
+    var heading2 = document.createElement('h2');
+    heading2.textContent  = "Matches";
+    document.body.appendChild(heading2);
 
     console.log(1)
   },
