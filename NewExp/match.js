@@ -132,27 +132,3 @@ app.init();
 //     })
 //     .catch(error => console.error(error));
 
-
-
-// // Algorithm to match professor
-// function matchProfessors(interest1, interest2, interest3, professorData) {
-//     const matchingProfessors = [];
-//     professorData.forEach((professor) => {
-//       let score = 0;
-//       if (professor.area_of_study_1.includes(interest1)) {
-//         score += 3;
-//       }
-//       if (professor.area_of_study_2.includes(interest2)) {
-//         score += 2;
-//       }
-//       if (professor.area_of_study_3.includes(interest3)) {
-//         score += 1;
-//       }
-//       professor.score = score;
-//       matchingProfessors.push(professor);
-//     });
-  
-//     matchingProfessors.sort((a, b) => b.score - a.score);
-//     // console.log(matchingProfessors);
-//     return matchingProfessors.slice(0, 3);
-//   }
