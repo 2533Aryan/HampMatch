@@ -84,23 +84,20 @@ const app = {
     var bodyResult = document.getElementById('main');
     bodyResult.id = "result";
 
+    
+    // Heading1
+    var heading1 = document.createElement('h1');
+    heading1.textContent  = "ProF Match";
+    document.body.appendChild(heading1);
+
+    // Heading 2
+    var heading2 = document.createElement('h2');
+    heading2.textContent  = "Matches";
+    heading2.id = "big";
+    document.body.appendChild(heading2);
+
 
     for (i=0; i<3; i++){
-      // Heading1
-      var heading1 = document.createElement('h1');
-      heading1.textContent  = "ProF Match";
-      document.body.appendChild(heading1);
-
-
-
-      // Heading 2
-      var heading2 = document.createElement('h2');
-      heading2.textContent  = "Matches";
-      heading2.id = "big";
-      document.body.appendChild(heading2);
-
-
-
       // Div element - Container
       var divContainer = document.createElement('div');
       divContainer.className = "container";
