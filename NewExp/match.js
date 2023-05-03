@@ -168,7 +168,16 @@ const app = {
     }
 
 
-    // 
+    // Div - Submit Button
+    var divSubmitButton = document.createElement('div');
+    divSubmitButton.className  = "submit";
+    document.body.appendChild(divSubmitButton);
+
+    // Button Link
+    var divSubmitButton = document.createElement('div');
+    divSubmitButton.className  = "submit";
+    document.body.appendChild(divSubmitButton);
+
     // <div id="submit">
     //   <a href="main-page.html"><button>HOME</button></a>
     // </div> 
