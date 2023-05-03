@@ -29,13 +29,13 @@ const app = {
     submitButton.addEventListener("click", function(){
       // console.log(profInterest1.value, profInterest2.value, profInterest3.value);
       if (studInterest1.value == ""){
-        studInterest1.value = -1;
+        studInterest1.value = NaN;
       }
       if (studInterest2.value == ""){
-        studInterest2.value = -1;
+        studInterest2.value = NaN;
       }
       if (studInterest3.value == ""){
-        studInterest3.value = -1;
+        studInterest3.value = NaN;
       }
       studentData = [studInterest1.value, studInterest2.value, studInterest3.value];
       // console.log(studentData);
