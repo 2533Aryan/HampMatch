@@ -5,29 +5,16 @@ const app = {
       console.log('HTML loaded');
   },
   load: () => {
-      var data = [];
       //the page had finished loading its HTML
       app.getData();
-  },
-  showLoading: () => {
-      let ul = document.querySelector('.list');
-      let li = document.createElement('li');
-      li.textContent = 'Loading...';
-      li.className = 'loading-list';
-      ul.appendChild(li);
   },
   getData: () => {
       //based on the current page...
       let page = document.body.id;
       switch (page) {
-          case 'posts':
+          case 'main':
               app.run();
               //add custom event listeners for posts page
-              break;
-          case 'users':
-              app.showLoading();
-              // app.run2();
-              //add custom event listeners for users page
               break;
           default:
               app.somethingElse();
@@ -96,16 +83,15 @@ const app = {
 app.init();
 
 
-var submitButton = document.querySelector('match-button');
-// getElementById("match-button")
+// var submitButton = document.getElementById("match-button");
         
-submitButton.addEventListener("click", function(){
-  // var profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
-  // var profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
-  // var profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
+// submitButton.addEventListener("click", function(){
+//   // var profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
+//   // var profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
+//   // var profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
 
-  // console.log(profInterest1, profInterest2, profInterest3);
-})
+//   // console.log(profInterest1, profInterest2, profInterest3);
+// })
 
 // const url = "professor.json";
 
