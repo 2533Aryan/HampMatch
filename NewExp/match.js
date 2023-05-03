@@ -89,11 +89,15 @@ const app = {
     heading1.textContent  = "ProF Match";
     document.body.appendChild(heading1);
 
+
+
     // Heading 2
     var heading2 = document.createElement('h2');
     heading2.textContent  = "Matches";
     heading2.id = "big";
     document.body.appendChild(heading2);
+
+
 
     // Div element - Container
     var divContainer = document.createElement('div');
@@ -158,6 +162,10 @@ const app = {
     pNewEmail.appendChild(pNewEmailContent);
     
 
+    // Break Element
+    var breakElement = document.createElement('br');
+    document.body.appendChild(breakElement);
+        
     console.log(1)
   },
   err: (err) => {
