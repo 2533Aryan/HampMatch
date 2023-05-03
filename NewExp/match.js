@@ -3,14 +3,21 @@ const profInterest2 = "0";
 const profInterest3 = "0";
 
 
-function getData(){
-  profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
-  profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
-  profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
-  console.log(profInterest1, profInterest2, profInterest3);
-}
+// function getData(){
+//   profInterest1 = document.querySelector('input[type="text"][name="Area1"]').value;
+//   profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
+//   profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
+//   console.log(profInterest1, profInterest2, profInterest3);
+// }
 
 
+var jsonBtn = document.getElementById("match-button")
+        
+jsonBtn.addEventListener("click", function(){
+    data = [firstname.value, lastname.value];
+    app.run2();
+    // console.log(data);
+})
 
 // const url = "professor.json";
 
