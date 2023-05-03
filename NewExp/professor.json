@@ -1,0 +1,60 @@
+{
+    "professors": [
+      {
+        "first_name": "John",
+        "last_name": "Castorino",
+        "area_of_study_1": "Computer Science",
+        "area_of_study_1_alternative": ["Computer Science", "CS", "Computer"],
+        "area_of_study_2": "Artificial Intelligence",
+        "area_of_study_2_alternative": ["AI", "Computer Learning"],
+        "area_of_study_3": "Machine Learning",
+        "area_of_study_3_alternative": ["ML", "Deep Learning"],
+        "email_id": "johndoe@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/john-castorino.jpg.webp?itok=G_y9x1oI",
+        "read-more": "https://www.hampshire.edu/academics/faculty/john-castorino",
+        "score": 0
+      },
+      {
+        "first_name": "Christoph",
+        "last_name": "Cox",
+        "area_of_study_1": "Biology",
+        "area_of_study_2": "Genetics",
+        "area_of_study_3": "Biochemistry",
+        "email_id": "janesmith@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2022-03/Christoph__640-x-640.jpg.webp?h=93fa4828&itok=NwMjJEKm",
+        "read-more": "https://www.hampshire.edu/academics/faculty/john-castorino",
+        "score": 0
+      },
+      {
+        "first_name": "Jaime",
+        "last_name": "Davila",
+        "area_of_study_1": "Mathematics",
+        "area_of_study_2": "Statistics",
+        "area_of_study_3": "Data Analysis",
+        "email_id": "bobjohnson@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2022-04/Jaime-Davila_Square.jpg.webp?h=b6737b5b&itok=KolaSu9C",
+        "score": 0
+      },
+      {
+        "first_name": "Alan",
+        "last_name": "Goodman",
+        "area_of_study_1": "Chemistry",
+        "area_of_study_2": "Organic Chemistry",
+        "area_of_study_3": "Biochemistry",
+        "email_id": "karenwilliams@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/Grid_a.goodman.jpg.webp?itok=wjvoqRCh",
+        "score": 0
+      },
+      {
+        "first_name": "Ethan",
+        "last_name": "Meyers",
+        "area_of_study_1": "Physics",
+        "area_of_study_2": "Quantum Mechanics",
+        "area_of_study_3": "Astrophysics",
+        "email_id": "davidlee@university.edu",
+        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty_thumbnails/Ethan_Meyers_grid.jpg.webp?itok=vY8S9Pv-",
+        "score": 0
+      }
+    ]
+}
+  
