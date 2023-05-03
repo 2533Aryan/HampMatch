@@ -170,7 +170,7 @@ const app = {
 
     // Div - Submit Button
     var divSubmitButton = document.createElement('div');
-    divSubmitButton.className  = "submit";
+    divSubmitButton.id  = "submit";
     document.body.appendChild(divSubmitButton);
 
     // Button Link
@@ -178,9 +178,11 @@ const app = {
     linkSubmitButton.href  = "main-page.html";
     divSubmitButton.appendChild(linkSubmitButton);
 
-    // <div id="submit">
-    //   <a href="main-page.html"><button>HOME</button></a>
-    // </div> 
+    // Button
+    var submitButton = document.createElement('a');
+    submitButton.textContent  = "HOME";
+    linkSubmitButton.appendChild(submitButton);
+
     console.log(1)
   },
   err: (err) => {
