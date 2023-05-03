@@ -174,9 +174,9 @@ const app = {
     document.body.appendChild(divSubmitButton);
 
     // Button Link
-    var divSubmitButton = document.createElement('div');
-    divSubmitButton.className  = "submit";
-    document.body.appendChild(divSubmitButton);
+    var linkSubmitButton = document.createElement('a');
+    linkSubmitButton.href  = "main-page.html";
+    divSubmitButton.appendChild(linkSubmitButton);
 
     // <div id="submit">
     //   <a href="main-page.html"><button>HOME</button></a>
