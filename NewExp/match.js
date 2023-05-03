@@ -6,6 +6,7 @@ const app = {
   },
   load: () => {
       //the page had finished loading its HTML
+      var profData = [];
       app.getData();
   },
   getData: () => {
@@ -27,11 +28,10 @@ const app = {
 
     submitButton.addEventListener("click", function(){
       console.log(profInterest1.value, profInterest2.value, profInterest3.value);
-      app.getPosts(profInterest1.value, profInterest2.value, profInterest3.value);
-
+      profData = [profInterest1.value, profInterest2.value, profInterest3.value];
     })
   },
-  getPosts: (interest1, interest2, interest3) => {
+  getPosts: () => {
     let url = app.baseURL;
     let req = new Request(url, {
         method: 'GET',
@@ -39,7 +39,7 @@ const app = {
     });
     fetch(url)
         .then(response => response.json())
-        .then(app.matchProfessors(interest1, interest2, interest3))
+        .then(app.matchProfessors())
         .catch(app.err);
   },
   showPosts: (posts) => {
@@ -55,21 +55,18 @@ const app = {
       });
       // ul.appendChild(df);
   },
-  matchProfessors: (interest1, interest2, interest3, professorData) => {
-    // var interest1 = profInterest1.value;
-    // var interest2 = profInterest2.value;
-    // var interest3 = profInterest3.value;
+  matchProfessors: (professorData) => {
     
     const matchingProfessors = [];  
     professorData.forEach((professor) => {
       let score = 0;
-      if (professor.area_of_study_1.includes(interest1)) {
+      if (professor.area_of_study_1.includes(profData[0])) {
         score += 3;
       }
-      if (professor.area_of_study_2.includes(interest2)) {
+      if (professor.area_of_study_2.includes(profData[1])) {
         score += 2;
       }
-      if (professor.area_of_study_3.includes(interest3)) {
+      if (professor.area_of_study_3.includes(profData[3])) {
         score += 1;
       }
       professor.score = score;
