@@ -84,88 +84,101 @@ const app = {
     var bodyResult = document.getElementById('main');
     bodyResult.id = "result";
 
-    // Heading1
-    var heading1 = document.createElement('h1');
-    heading1.textContent  = "ProF Match";
-    document.body.appendChild(heading1);
+
+    for (i=0; i<3; i++){
+      // Heading1
+      var heading1 = document.createElement('h1');
+      heading1.textContent  = "ProF Match";
+      document.body.appendChild(heading1);
 
 
 
-    // Heading 2
-    var heading2 = document.createElement('h2');
-    heading2.textContent  = "Matches";
-    heading2.id = "big";
-    document.body.appendChild(heading2);
+      // Heading 2
+      var heading2 = document.createElement('h2');
+      heading2.textContent  = "Matches";
+      heading2.id = "big";
+      document.body.appendChild(heading2);
 
 
 
-    // Div element - Container
-    var divContainer = document.createElement('div');
-    divContainer.className = "container";
-    document.body.appendChild(divContainer);
+      // Div element - Container
+      var divContainer = document.createElement('div');
+      divContainer.className = "container";
+      document.body.appendChild(divContainer);
 
-    // Continer - new div - Outer Box 2
-    var divOuterBox2 = document.createElement('div');
-    divOuterBox2.className = "outer-box2";
-    divContainer.appendChild(divOuterBox2);
+      // Continer - new div - Outer Box 2
+      var divOuterBox2 = document.createElement('div');
+      divOuterBox2.className = "outer-box2";
+      divContainer.appendChild(divOuterBox2);
 
-    // Continer - new div - Inner Box 2
-    var divInnerBox2 = document.createElement('div');
-    divInnerBox2.className = "inner-box2";
-    divOuterBox2.appendChild(divInnerBox2);
+      // Continer - new div - Inner Box 2
+      var divInnerBox2 = document.createElement('div');
+      divInnerBox2.className = "inner-box2";
+      divOuterBox2.appendChild(divInnerBox2);
 
-    // Inner Box 2 - new div - Prof Name
-    var divProfName = document.createElement('div');
-    divProfName.className = "prof-name";
-    divInnerBox2.appendChild(divProfName);
-
-
-    // Continer - new div - Img Content
-    var divImgContent = document.createElement('div');
-    divImgContent.className = "img-content";
-    divOuterBox2.appendChild(divImgContent);
-
-    // Img Content - new img element 
-    var imgElement = document.createElement('img');
-    imgElement.src = "";
-    imgElement.alt ="Professor Image";
-    divImgContent.appendChild(imgElement);
+      // Inner Box 2 - new div - Prof Name
+      var divProfName = document.createElement('div');
+      divProfName.className = "prof-name";
+      divInnerBox2.appendChild(divProfName);
 
 
-    // Continer - new div - Prof Area
-    var divProfArea = document.createElement('div');
-    divProfArea.className = "prof-area";
-    divOuterBox2.appendChild(divProfArea);
+      // Continer - new div - Img Content
+      var divImgContent = document.createElement('div');
+      divImgContent.className = "img-content";
+      divOuterBox2.appendChild(divImgContent);
 
-    // Prof Area - new area heading element 
-    var pNewArea = document.createElement('p');
-    pNewArea.className = "area-heading";
-    pNewArea.textContent ="Area of study:";
-    divProfArea.appendChild(pNewArea);
+      // Img Content - new img element 
+      var imgElement = document.createElement('img');
+      imgElement.src = "";
+      imgElement.alt ="Professor Image";
+      divImgContent.appendChild(imgElement);
 
 
-    // Continer - new div - Prof Email
-    var divProfEmail = document.createElement('div');
-    divProfEmail.className = "prof-email";
-    divOuterBox2.appendChild(divProfEmail);
+      // Continer - new div - Prof Area
+      var divProfArea = document.createElement('div');
+      divProfArea.className = "prof-area";
+      divOuterBox2.appendChild(divProfArea);
 
-    // Prof Email - new email heading element 
-    var pNewEmail = document.createElement('p');
-    pNewEmail.className = "email-heading";
-    pNewEmail.textContent ="Email:";
-    divProfEmail.appendChild(pNewEmail);
+      // Prof Area - new area heading element 
+      var pNewArea = document.createElement('p');
+      pNewArea.className = "area-heading";
+      pNewArea.textContent ="Area of study:";
+      divProfArea.appendChild(pNewArea);
 
-    // Email Heading - new email content element 
-    var pNewEmailContent = document.createElement('p');
-    pNewEmailContent.className = "email-content";
-    pNewEmailContent.textContent ="";
-    pNewEmail.appendChild(pNewEmailContent);
+
+      // Continer - new div - Prof Email
+      var divProfEmail = document.createElement('div');
+      divProfEmail.className = "prof-email";
+      divOuterBox2.appendChild(divProfEmail);
+
+      // Prof Email - new email heading element 
+      var pNewEmail = document.createElement('p');
+      pNewEmail.className = "email-heading";
+      pNewEmail.textContent ="Email:";
+      divProfEmail.appendChild(pNewEmail);
+
+      // Email Heading - new email content element 
+      var pNewEmailContent = document.createElement('p');
+      pNewEmailContent.className = "email-content";
+      pNewEmailContent.textContent ="";
+      pNewEmail.appendChild(pNewEmailContent);
+      
+
+      // Break Element
+      var breakElement = document.createElement('br');
+      document.body.appendChild(breakElement);
+    }
+
+
     
 
-    // Break Element
-    var breakElement = document.createElement('br');
-    document.body.appendChild(breakElement);
-        
+  //   <div class="outer-box2">
+  //   <div class="inner-box2"><div class="prof-name"></div></div>
+  //   <div class="img-content"><img src="" alt="Professor Image"></div>
+  //   <div class="prof-area"><p class="area-heading">Area of study:</p></div>
+  //   <div class="prof-email"><p class="email-heading">Email:</p><p class="email-content"></p></div>
+  // </div>
+  // <br>    
     console.log(1)
   },
   err: (err) => {
