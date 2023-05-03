@@ -19,14 +19,14 @@ const app = {
       }
   },
   run: () => {
-    var profInterest1 = document.getElementById('area1').value;
-    var profInterest2 = document.querySelector('input[type="text"][name="Area2"]').value;
-    var profInterest3 = document.querySelector('input[type="text"][name="Area3"]').value;
+    var profInterest1 = document.getElementById('area1');
+    var profInterest2 = document.getElementById('area2');
+    var profInterest3 = document.getElementById('area3');
   
     var submitButton = document.getElementById("match-button");
 
     submitButton.addEventListener("click", function(){
-      console.log(profInterest1, profInterest2, profInterest3);
+      console.log(profInterest1.value, profInterest2.value, profInterest3.value);
     })
   },
   getPosts: () => {
