@@ -73,9 +73,8 @@ const app = {
 
     matchingProfessors.sort((a, b) => b.score - a.score);
     matchedProf = [matchingProfessors[0], matchingProfessors[1], matchingProfessors[2]]; 
-    // console.log(matchingProfessors);
+    console.log(matchedProf);
     app.switch();
-    // return matchingProfessors.slice(0, 3);
   },
   switch: () => {
     var delMain = document.getElementById('main');
