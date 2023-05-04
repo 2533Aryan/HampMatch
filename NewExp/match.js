@@ -185,6 +185,41 @@ const app = {
     submitButton.textContent  = "HOME";
     linkSubmitButton.appendChild(submitButton);
   },
+  matchProf: () =>{
+  // Select professors
+  const selectedProfessors = matchProfessors(profInterest1, profInterest2, profInterest3, data.professors)
+
+  // Display the selected professors
+  selectedProfessors.forEach((professor, index) => {
+      const professorName = professor.first_name + " " + professor.last_name;
+      const professorImageUrl = professor.image;
+      const professorEmail = professor.email_id;
+      const professorAreasOfStudy = [
+          professor.area_of_study_1,
+          professor.area_of_study_2,
+          professor.area_of_study_3
+      ];
+
+      // Set the professor image
+      const imageElement = document.querySelectorAll("img")[index];
+      imageElement.src = professorImageUrl;
+
+      // Set the professor name
+      const nameElement = document.querySelectorAll(".prof-name")[index];
+      nameElement.textContent = professorName;
+
+      // // Set the professor areas of study
+      const areasOfStudyElement = document.querySelectorAll(".prof-area")[index];
+      professorAreasOfStudy.forEach(areaOfStudy => {
+          const liElement = document.createElement("li");
+          liElement.textContent = areaOfStudy;
+          areasOfStudyElement.appendChild(liElement);
+      });
+
+      // Set the professor email
+      const emailElement = document.querySelectorAll(".email-content")[index];
+      emailElement.textContent = professorEmail;
+  },
   err: (err) => {
       //display the error to the user
       let div = document.createElement('div');
