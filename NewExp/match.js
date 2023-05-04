@@ -184,8 +184,6 @@ const app = {
     var submitButton = document.createElement('button');
     submitButton.textContent  = "HOME";
     linkSubmitButton.appendChild(submitButton);
-
-    console.log(1)
   },
   err: (err) => {
       //display the error to the user
