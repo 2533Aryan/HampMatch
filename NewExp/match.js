@@ -58,33 +58,37 @@ const app = {
     const matchingProfessors = [];  
     professorData.professors.forEach(professor => {
       let score = 0;
+
       if (professor.area_of_study_1.includes(studentData[0])) {
         score += 3;
-        if (professor.area_of_study_2.includes(studentData[0])) {
-          score += 2;
-        }
-        if(professor.area_of_study_3.includes(studentData[0])) {
-          score += 1;
-        }
+      } else if (professor.area_of_study_2.includes(studentData[0])) {
+        score += 2;
+      } else if (professor.area_of_study_3.includes(studentData[0])) {
+        score += 1;
+      } else {
+        score += 0;
       }
+
       if (professor.area_of_study_2.includes(studentData[1])) {
         score += 2;
-        if (professor.area_of_study_1.includes(studentData[1])) {
-          score += 3;
-        }
-        if(professor.area_of_study_3.includes(studentData[1])) {
-          score += 1;
-        }        
-      }
+      } else if (professor.area_of_study_1.includes(studentData[1])) {
+        score += 3;
+      } else if (professor.area_of_study_3.includes(studentData[1])) {
+        score += 1;
+      } else {
+        score += 0;
+      }        
+
       if (professor.area_of_study_3.includes(studentData[2])) {
         score += 1;
-        if (professor.area_of_study_2.includes(studentData[2])) {
-          score += 2;
-        }
-        if(professor.area_of_study_1.includes(studentData[2])) {
-          score += 3;
-        }        
-      }
+      } else if (professor.area_of_study_2.includes(studentData[2])) {
+        score += 2;
+      } else if(professor.area_of_study_1.includes(studentData[2])) {
+        score += 3;
+      } else {
+        score += 0;
+      }        
+
       professor.score = score;
       matchingProfessors.push(professor);
     });
