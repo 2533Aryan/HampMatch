@@ -1,17 +1,6 @@
 {
     "professors": [
       {
-        "first_name": "Christoph",
-        "last_name": "Cox",
-        "area_of_study_1": "Biology",
-        "area_of_study_2": "Genetics",
-        "area_of_study_3": "Biochemistry",
-        "email_id": "janesmith@university.edu",
-        "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2022-03/Christoph__640-x-640.jpg.webp?h=93fa4828&itok=NwMjJEKm",
-        "read-more": "https://www.hampshire.edu/academics/faculty/john-castorino",
-        "score": 0
-      },      
-      {
         "first_name": "John",
         "last_name": "Castorino",
         "area_of_study_1": "Computer Science",
