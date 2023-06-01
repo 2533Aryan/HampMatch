@@ -1,4 +1,4 @@
-  
+{  
 professors": [
       {
         "first_name": "Cindy",
@@ -14,7 +14,8 @@ professors": [
         "read_more": "https://www.hampshire.edu/academics/faculty/cynthia-gill",
         "present": 1, 
         "score": 0
-      },      {
+      },
+      {
         "first_name": "John",
         "last_name": "Castorino",
         "area_of_study_1": "Biology",
@@ -34,22 +35,29 @@ professors": [
         "last_name": "Albert",
         "area_of_study_1": "English Literature",
         "area_of_study_1_alternative": ["English","Literature"],
-        "area_of_study_2": "Writing",        "area_of_study_2_alternative": ["Experimental Writing","Poetry","Creative Writing","Psychoanalytic Writing"],
-        "area_of_study_3": "Gender studies",        "area_of_study_3_alternative": ["Queer Theory","Women,Gender,and Sexuality Studies","Sexuality studies"],
+        "area_of_study_2": "Writing",
+        "area_of_study_2_alternative": ["Experimental Writing","Poetry","Creative Writing","Psychoanalytic Writing"],
+        "area_of_study_3": "Gender studies",
+        "area_of_study_3_alternative": ["Queer Theory","Women,Gender,and Sexuality Studies","Sexuality studies"],
         "email_id": "falbert@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/staff_photos/Faune-Albert-grid.png.webp?itok=x7rmiVY9",
-        "read-more": "https://www.hampshire.edu/staff/faune-albert-02f",        "present": 1,
+        "read-more": "https://www.hampshire.edu/staff/faune-albert-02f",
+        "present": 1,
         "score": 0
       },
       {
         "first_name": "Nathalie",
         "last_name": "Arnold",
-        "area_of_study_1": "Anthropology",        "area_of_study_1_alternative": ["Socio-cultural anthropology","Cultural Anthropology","Culture Studies","Ethnography","Islamic Anthropology"],
-        "area_of_study_2": "Politics",        "area_of_study_2_alternative": ["African Politics","African Studies","Islam and Politics"],
-        "area_of_study_3": "Creative Writing",        "area_of_study_3_alternative": ["Writing","African Literature","Women's Experimental Fiction"],
+        "area_of_study_1": "Anthropology",
+        "area_of_study_1_alternative": ["Socio-cultural anthropology","Cultural Anthropology","Culture Studies","Ethnography","Islamic Anthropology"],
+        "area_of_study_2": "Politics",
+        "area_of_study_2_alternative": ["African Politics","African Studies","Islam and Politics"],
+        "area_of_study_3": "Creative Writing",
+        "area_of_study_3_alternative": ["Writing","African Literature","Women's Experimental Fiction"],
         "email_id": "naIA@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty_thumbnails/Grid_n.arnold.jpg.webp?itok=M29ZETzn",
-        "read-more": "https://www.hampshire.edu/academics/faculty/nathalie-arnold",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/nathalie-arnold",
+        "present": 1,
         "score": 0
       },
       {
@@ -63,7 +71,8 @@ professors": [
         "area_of_study_3_alternative": ["Ethnographic Film making","Cultural Film-making"],
         "email_id": "felicity@anthro.umass.edu",
         "image": "https://www.umass.edu/anthro/sites/default/files/styles/medium/public/Aulino%20headshot.png?itok=5z9gG_Xr"
-        "read-more": "https://www.umass.edu/anthro/felicity-aulino",        "present": 1,
+        "read-more": "https://www.umass.edu/anthro/felicity-aulino",
+        "present": 1,
         "score": 0
       },
       {
@@ -92,7 +101,8 @@ professors": [
         "area_of_study_3_alternative": ["Scientific Writing","Physics of color"],
         "email_id": "kbNS@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/Bradonjic-Faculty-Profile%20-%201.jpg.webp?itok=iSbLVlHw",
-        "read-more": "https://www.hampshire.edu/academics/faculty/kaca-bradonjic",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/kaca-bradonjic",
+        "present": 1,
         "score": 0
       },
       {
@@ -106,7 +116,8 @@ professors": [
         "area_of_study_3_alternative": ["Social psychology"],
         "email_id": "mmbCS@hampshire.edu",
         "image": "",
-        "read-more": "https://www.hampshire.edu/academics/faculty/melissa-burch",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/melissa-burch",
+        "present": 1,
         "score": 0
       },
       {
@@ -120,7 +131,8 @@ professors": [
         "area_of_study_3_alternative": ["Ethnohistory",],
         "email_id": "rbcCSI@hampshire.edu",
         "image": "https://www.umass.edu/anthro/sites/default/files/styles/medium/public/Aulino%20headshot.png?itok=5z9gG_Xr"
-        "read-more": "https://www.hampshire.edu/academics/faculty/robert-caldwell-jr",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/robert-caldwell-jr",
+        "present": 1,
         "score": 0
       },
       {
@@ -134,18 +146,23 @@ professors": [
         "area_of_study_3_alternative": ["Social psychology"],
         "email_id": "rcCS@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/2023-02/roos%20thumb_1.6.1.jpg.webp?h=c7b3bee7&itok=aQyMeIHj",
-        "read-more": "https://www.hampshire.edu/academics/faculty/roosbelinda-cardenas",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/roosbelinda-cardenas",
+        "present": 1,
         "score": 0
       },
       {
         "first_name": "Margaret",
         "last_name": "Cerullo",
-        "area_of_study_1": "Sociology",        "area_of_study_1_alternative": ["Social theory","Feminist theory","Queer theory","Sociology of culture","Social movements"],
-        "area_of_study_2": "Politics",        "area_of_study_2_alternative": ["Migration","Global Migration","Immigration","Latin American politics"],
-        "area_of_study_3": "Philospohy",        "area_of_study_3_alternative": [""],
+        "area_of_study_1": "Sociology",
+        "area_of_study_1_alternative": ["Social theory","Feminist theory","Queer theory","Sociology of culture","Social movements"],
+        "area_of_study_2": "Politics",
+        "area_of_study_2_alternative": ["Migration","Global Migration","Immigration","Latin American politics"],
+        "area_of_study_3": "Philospohy",
+        "area_of_study_3_alternative": [""],
         "email_id": "mcSS@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty_thumbnails/Grid_cerullo.jpg.webp?itok=gxINVWu0",
-        "read-more": "https://www.hampshire.edu/academics/faculty/margaret-cerullo",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/margaret-cerullo",
+        "present": 1,
         "score": 0
       },
       {
@@ -159,20 +176,26 @@ professors": [
         "area_of_study_3_alternative": ["Game design"],
         "email_id": "dcLM@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty/files/Grid_cohn_0.jpg.webp?itok=E_XERyPv",
-        "read-more": "https://www.hampshire.edu/academics/faculty/donna-cohn",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/donna-cohn",
+        "present": 1,
         "score": 0
       },
       {
         "first_name": "Elizabeth",
         "last_name": "Conlisk",
-        "area_of_study_1": "Public health",        "area_of_study_1_alternative": ["Epidemiology","Feminist theory","Queer theory","Sociology of culture","Social movements"],
-        "area_of_study_2": "Nutrition",        "area_of_study_2_alternative": ["Agriculture","Food","Health"],
-        "area_of_study_3": "Statistics",        "area_of_study_3_alternative": ["Quantitive analysis"],
+        "area_of_study_1": "Public health",
+        "area_of_study_1_alternative": ["Epidemiology","Feminist theory","Queer theory","Sociology of culture","Social movements"],
+        "area_of_study_2": "Nutrition",
+        "area_of_study_2_alternative": ["Agriculture","Food","Health"],
+        "area_of_study_3": "Statistics",
+        "area_of_study_3_alternative": ["Quantitive analysis"],
         "email_id": "mcSS@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty_thumbnails/Grid_cerullo.jpg.webp?itok=gxINVWu0",
-        "read-more": "https://www.hampshire.edu/academics/faculty/margaret-cerullo",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/margaret-cerullo",
+        "present": 1,
         "score": 0
-      },      {
+      },
+      {
         "first_name": "Christina",
         "last_name": "Cianfrani",
         "area_of_study_1": "Environmental engineering",
@@ -183,7 +206,8 @@ professors": [
         "area_of_study_3_alternative": ["climate change"],
         "email_id": "ccNS@hampshire.edu",
         "image": "https://www.hampshire.edu/sites/default/files/styles/medium_square_hq/public/faculty_thumbnails/Grid_cianfrani.jpg.webp?itok=xNKI-DXv",
-        "read-more": "https://www.hampshire.edu/academics/faculty/donna-cohn",        "present": 1,
+        "read-more": "https://www.hampshire.edu/academics/faculty/donna-cohn",
+        "present": 1,
         "score": 0
       },
       {
@@ -546,12 +570,4 @@ professors": [
         "present": 1,
         "score": 0
       },  
-
-         
-
-
-   
-
-    
-
- 
+}
